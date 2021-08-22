@@ -10,12 +10,14 @@ public class Gm : MonoBehaviour
     float elaspe;
      Vector3 spawn;
     public GameObject spawning;
+    public GameObject spawning2;
+    public GameObject spawningpipe;
     float spawned = 1;
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.None;
-        spawn = new Vector3(18.5f, 11.8f, 8.8f);
+        spawn = spawningpipe.transform.position;
     }
 
     // Update is called once per frame
@@ -40,10 +42,18 @@ public class Gm : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;            
         }
         elaspe += Time.deltaTime;
-         if (Mathf.Ceil(elaspe) % 5 ==0 && Mathf.Ceil(elaspe) / 5 == spawned)
+         if (Mathf.Ceil(elaspe) % 5 ==0 && Mathf.Ceil(elaspe) / 10 == spawned)
          {
-            Instantiate(spawning, spawn, Quaternion.identity);
-            spawned += 1;
-         }
+            if (Random.value >= 0.5f)
+            {
+                Instantiate(spawning, spawn, Quaternion.identity);
+                spawned += 1;
+            }
+            else
+            {
+                Instantiate(spawning2, spawn, Quaternion.identity);
+                spawned += 1;
+            }
+        }
     }
 }
