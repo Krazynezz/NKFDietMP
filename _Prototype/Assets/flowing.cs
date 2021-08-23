@@ -5,6 +5,8 @@ using UnityEngine;
 public class flowing : MonoBehaviour
 {
     GameObject inside;
+    float cap = 90;
+    float rot= 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,21 +25,31 @@ public class flowing : MonoBehaviour
             {
                 inside = item.gameObject;
             }
-            if (item.GetComponent<PipeScript>().curved == true)
-            {
-                if (this.gameObject.transform.position == item.transform.position)
-                this.gameObject.transform.rotation = Quaternion.Euler(0, 0, 90);
-            }
-
         }
     }
     private void OnTriggerEnter(Collider other)
     {
+        if (inside.GetComponent<PipeScript>().curved == true)
+        {
+            if (transform.right == Vector3.right)
+            {
+                Debug.Log("sfsd");
+            }
+        }
         inside.tag = "Untagged";
     }
     private void OnTriggerExit(Collider other)
     {
         inside.tag = "pipe";
+        cap = 90;
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (inside.GetComponent<PipeScript>().curved == true && cap >= 1)
+        {
+            this.gameObject.transform.rotation *= Quaternion.Euler(0, 0, rot* 2f);
+            cap-= 2f;
+        }
+    }
 }
