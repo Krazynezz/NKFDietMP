@@ -81,7 +81,7 @@ public class move : MonoBehaviour
                         }
                         if (answered == 4)
                         {
-                            Instantiate(redcan, container.transform.position, Quaternion.identity);
+                            Instantiate(redcan, container.transform.position, Quaternion.Euler(0,90,0));
                         }
                         if (answered < 4)
                         {

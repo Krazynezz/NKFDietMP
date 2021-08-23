@@ -27,7 +27,7 @@ public class FirewallScript : MonoBehaviour
     {
         if (other.tag == "interactable" && (other.name == "Cereal")|| other.name == "RaspberryBuzz")
         {
-            off = new Vector3(num, 1, 0)/3;
+            off = new Vector3(0, 1, num) /3;
             player.GetComponent<move>().interacted = false;
             other.gameObject.transform.position = this.gameObject.transform.position + off;
             other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
