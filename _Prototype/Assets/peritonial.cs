@@ -7,10 +7,17 @@ public class peritonial : MonoBehaviour
 {
     Vector3 prev;
     RaycastHit hit;
+    move refer;
     // Start is called before the first frame update
     void Start()
     {
         prev = this.transform.position;
+        foreach (var item in GameObject.FindGameObjectsWithTag("MainCamera"))
+        {
+            if (item.GetComponent<move>())
+                refer = item.GetComponent<move>();
+        }
+        refer.enabled = false;
     }
 
     // Update is called once per frame
@@ -41,6 +48,8 @@ public class peritonial : MonoBehaviour
     {
         if (collision.gameObject.tag == "end")
         {
+            refer.crosshair.active = true;
+            refer.enabled = true;
             SceneManager.UnloadSceneAsync("Maze");
         }
     }
