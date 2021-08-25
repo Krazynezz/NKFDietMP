@@ -20,6 +20,8 @@ public class FirewallScript : MonoBehaviour
         if (num == 3)
         {
             this.gameObject.transform.parent.gameObject.transform.position -= Vector3.up/10 ;
+            Destroy(GameObject.Find("Cereal"));
+            Destroy(GameObject.Find("RaspberryBuzz"));
         }
     }
 
