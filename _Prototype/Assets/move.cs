@@ -27,19 +27,22 @@ public class move : MonoBehaviour
             Cursor.lockState = CursorLockMode.Locked;
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-        front = transform.forward * Input.GetAxis("Vertical");
-        left = transform.right * Input.GetAxis("Horizontal");
+    // Update is called once per frame
+    private void FixedUpdate()
+    {
+           front = transform.forward * Input.GetAxis("Vertical")*10;
+        left = transform.right * Input.GetAxis("Horizontal")*10;
         movement = front + left;
         movement.y = 0;
         player.Move(movement / 50);
-        transform.eulerAngles += new Vector3(Input.GetAxis("Mouse Y") * -1, Input.GetAxis("Mouse X") , 0);
+        transform.eulerAngles += new Vector3(Input.GetAxis("Mouse Y") * -2, Input.GetAxis("Mouse X")*2 , 0);
+
+    }
+ 
 
 
-
-
+    void Update()
+        {
 
         if (Input.GetButtonDown("Fire1"))
             {
