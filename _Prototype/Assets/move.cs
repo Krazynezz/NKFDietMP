@@ -30,12 +30,12 @@ public class move : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-           front = transform.forward * Input.GetAxis("Vertical")*10;
-        left = transform.right * Input.GetAxis("Horizontal")*10;
+           front = transform.forward * Input.GetAxis("Vertical")*5;
+        left = transform.right * Input.GetAxis("Horizontal")*5;
         movement = front + left;
         movement.y = 0;
         player.Move(movement / 50);
-        transform.eulerAngles += new Vector3(Input.GetAxis("Mouse Y") * -2, Input.GetAxis("Mouse X")*2 , 0);
+        transform.eulerAngles += new Vector3(Input.GetAxis("Mouse Y") * -1, Input.GetAxis("Mouse X") , 0);
 
     }
  
