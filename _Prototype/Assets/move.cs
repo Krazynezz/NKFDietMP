@@ -35,7 +35,6 @@ public class move : MonoBehaviour
         movement = front + left;
         movement.y = 0;
         player.Move(movement / 10);
-        transform.eulerAngles += new Vector3(Input.GetAxis("Mouse Y") * -1, Input.GetAxis("Mouse X") , 0);
 
     }
  
@@ -43,6 +42,7 @@ public class move : MonoBehaviour
 
     void Update()
         {
+        transform.eulerAngles += new Vector3(Input.GetAxis("Mouse Y") * -1, Input.GetAxis("Mouse X"), 0);
 
         if (Input.GetButtonDown("Fire1"))
             {
