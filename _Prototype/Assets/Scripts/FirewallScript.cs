@@ -21,13 +21,13 @@ public class FirewallScript : MonoBehaviour
         {
             this.gameObject.transform.parent.gameObject.transform.position -= Vector3.up/10 ;
             Destroy(GameObject.Find("Cereal"));
-            Destroy(GameObject.Find("RaspberryBuzz"));
+            Destroy(GameObject.Find("CanModel"));
         }
     }
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "interactable" && (other.name == "Cereal")|| other.name == "RaspberryBuzz")
+        if (other.tag == "interactable" && (other.name == "Cereal")|| other.name == "CanModel")
         {
             off = new Vector3(0, 1, num) /3;
             player.GetComponent<move>().interacted = false;
