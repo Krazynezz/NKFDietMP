@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.46613812, g: 0.46583676, b: 0.4619301, a: 1}
+  m_IndirectSpecularColor: {r: 0.4660946, g: 0.4657923, b: 0.46188897, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12177,7 +12177,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576492762}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.161081, y: -0.5430908, z: 13.144846}
+  m_LocalPosition: {x: 5.373, y: -1.441, z: 5.554}
   m_LocalScale: {x: 0.15966001, y: 0.5777776, z: 0.15966001}
   m_Children: []
   m_Father: {fileID: 1780711622}
@@ -12196,7 +12196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 534669902}
-  end: {x: 25.253, y: 2.45, z: 7}
+  end: {x: 22.12, y: -0.447, z: 11.499}
 --- !u!54 &576492768
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21524,8 +21524,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 4.423082, y: 5.296879, z: 10.647272}
+  m_Center: {x: -0.06461426, y: 0.1854818, z: -1.1567397}
 --- !u!1 &1017579384
 GameObject:
   m_ObjectHideFlags: 0
@@ -36531,7 +36531,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712973478}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.36108, y: -0.5430908, z: 13.144846}
+  m_LocalPosition: {x: 20.381, y: -1.47, z: 13.208}
   m_LocalScale: {x: 0.15966001, y: 0.5777776, z: 0.15966001}
   m_Children: []
   m_Father: {fileID: 1780711622}
@@ -36550,7 +36550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 534669902}
-  end: {x: 25.253, y: 2.45, z: 7}
+  end: {x: 21.736, y: -0.447, z: 11.499}
 --- !u!54 &1712973484
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -40217,7 +40217,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870253959}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.76108, y: -0.5430908, z: 13.144846}
+  m_LocalPosition: {x: 22.634, y: -1.011, z: 5.758}
   m_LocalScale: {x: 0.15966001, y: 0.5777776, z: 0.15966001}
   m_Children: []
   m_Father: {fileID: 1780711622}
@@ -40236,7 +40236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 534669902}
-  end: {x: 25.253, y: 2.45, z: 7}
+  end: {x: 21.928, y: -0.447, z: 11.499}
 --- !u!54 &1870253965
 Rigidbody:
   m_ObjectHideFlags: 0
