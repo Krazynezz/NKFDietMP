@@ -35003,7 +35003,10 @@ MonoBehaviour:
   connectdoor: {fileID: 933315449}
   connectdoor2: {fileID: 1007639591}
   connectdoor3: {fileID: 522127032}
-  root: {fileID: 2100000, guid: 03edbaeacaa4e774fbea907820e60769, type: 2}
+  root:
+  - {fileID: 204219455}
+  - {fileID: 817889038}
+  - {fileID: 1290013769}
   player: {fileID: 534669902}
 --- !u!65 &1802956276
 BoxCollider:
