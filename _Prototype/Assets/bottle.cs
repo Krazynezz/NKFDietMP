@@ -25,6 +25,10 @@ public class bottle : MonoBehaviour
             player.GetComponent<move>().interacted = false;
             Destroy(this.gameObject);
             hydate = true;
+            if (plate.eaten == true)
+            {
+                plate.door.GetComponent<Animator>().SetBool("character_nearby", true);
+            }
         }
 
     }
