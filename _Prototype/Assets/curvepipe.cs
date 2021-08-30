@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class curvepipe : MonoBehaviour
 {
-    Vector3[] waypoints;
+    Transform[] waypoints;
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 4; i++)
+        foreach (Transform child in transform)
         {
-      //      waypoints[i] = 
+            waypoints[waypoints.Length] = child;
+            Debug.Log(child);
+            Debug.Log(waypoints.Length);
         }
     }
 
