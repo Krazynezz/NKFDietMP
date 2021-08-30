@@ -5,6 +5,7 @@ using UnityEngine;
 public class bottle : MonoBehaviour
 {
     public GameObject player;
+    public static bool hydate = false;
 
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class bottle : MonoBehaviour
         {
             player.GetComponent<move>().interacted = false;
             Destroy(this.gameObject);
+            hydate = true;
         }
 
     }

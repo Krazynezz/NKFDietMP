@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,9 +7,8 @@ public class door : MonoBehaviour
 
 {
     public GameObject card;
-    RaycastHit cardcheck;
-    public Animator animator;
-    bool hit;
+    public GameObject animator;
+    Collider[] hit;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,14 +18,15 @@ public class door : MonoBehaviour
     // Update is called once per frame
     void Update()
         {
-            
-        hit = Physics.BoxCast(this.gameObject.transform.position,Vector3.one*10,Vector3.zero, out cardcheck);
-        if (hit)
-            { 
-            Debug.Log(cardcheck.collider.name);
-            if (cardcheck.collider.gameObject.name == card.name)
+        hit = Physics.OverlapBox(this.gameObject.transform.position+Vector3.forward/10,Vector3.one/50);
+        if (hit != null)
+        {
+            foreach (var item in hit)
             {
-                animator.SetBool("character_nearby", true);
+                if (item.name == card.name)
+                {
+                    animator.GetComponent<Animator>().SetBool("character_nearby", true);
+                }
             }
         }
     }
