@@ -8,7 +8,7 @@ public class FinalWeigh : MonoBehaviour
     public GameObject connectdoor;
     public GameObject connectdoor2;
     public GameObject connectdoor3;
-    public Material root;
+    public GameObject[] root;
     public GameObject player;
 
     // Start is called before the first frame update
@@ -38,9 +38,14 @@ public class FinalWeigh : MonoBehaviour
             other.transform.position = this.gameObject.transform.position + Vector3.up;
             other.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
-        if (other.material == root)
+        foreach (var item in root)
         {
-            num += 1;
+            if (other.gameObject == item)
+            {
+                num++;
+            }
+
         }
+   
     }
 }
