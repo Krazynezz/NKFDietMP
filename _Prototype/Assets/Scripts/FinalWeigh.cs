@@ -38,8 +38,12 @@ public class FinalWeigh : MonoBehaviour
             other.transform.position = this.gameObject.transform.position + Vector3.up;
             other.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
-        if (other.material == root)
+        Debug.Log(other.gameObject.GetComponent<MeshRenderer>().material);
+        Debug.Log(root);
+
+        if (other.gameObject.GetComponent<MeshRenderer>().material == root)
         {
+            Debug.Log("rgazz");
             num += 1;
         }
     }
