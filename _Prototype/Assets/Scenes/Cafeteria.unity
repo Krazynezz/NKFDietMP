@@ -10300,7 +10300,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.7, y: -1.12, z: -19.55}
+  m_LocalPosition: {x: 9.37, y: -1.12, z: -6.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -19391,7 +19391,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9333ba36b86a3e54a84a3d7939f40722,
         type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9333ba36b86a3e54a84a3d7939f40722,
         type: 3}
@@ -35003,7 +35003,10 @@ MonoBehaviour:
   connectdoor: {fileID: 933315449}
   connectdoor2: {fileID: 1007639591}
   connectdoor3: {fileID: 522127032}
-  root: {fileID: 2100000, guid: 03edbaeacaa4e774fbea907820e60769, type: 2}
+  root:
+  - {fileID: 204219455}
+  - {fileID: 817889038}
+  - {fileID: 1290013769}
   player: {fileID: 534669902}
 --- !u!65 &1802956276
 BoxCollider:
