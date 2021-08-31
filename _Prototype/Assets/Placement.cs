@@ -10,6 +10,7 @@ public class Placement : MonoBehaviour
     public GameObject container;
     bool done = false;
     static float cheat;
+    public string correct;
 
 
 
@@ -21,7 +22,9 @@ public class Placement : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {}
+    {
+        Debug.Log(cheat);
+            }
     private void OnTriggerEnter(Collider item)
     {
         
@@ -32,14 +35,24 @@ public class Placement : MonoBehaviour
                     item.transform.position = transform.position + Vector3.up/5;
                     item.transform.rotation = Quaternion.Euler(0, 90, 0);
                     done = true;
-                    cheat += 1;
-                }
+            if (item.name == correct)
+            {
+                cheat += 1;
+            }  }
             
         
         if (cheat == 5)
         {
             Instantiate(Waterbottle,container.transform.position,Quaternion.identity);
             cheat += 1;
+        }
+    }
+    private void OnTriggerExit(Collider item)
+    {
+        done = false;
+        if (item.name == correct)
+        {
+            cheat -= 1;
         }
     }
 }
