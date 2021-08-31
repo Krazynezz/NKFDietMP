@@ -5965,7 +5965,7 @@ MonoBehaviour:
   - {fileID: 838917996}
   - {fileID: 1851281722}
   player: {fileID: 534669902}
-  weighplate: {x: 24.1, y: -2.1, z: -8.4}
+  weighplate: {x: 24.4, y: -1.787, z: -8.43}
 --- !u!54 &300866389
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8777,7 +8777,7 @@ MonoBehaviour:
   - {fileID: 1678559027}
   - {fileID: 1004166320}
   player: {fileID: 534669902}
-  weighplate: {x: 3.25, y: 23.15, z: 2.5}
+  weighplate: {x: 24.4, y: -1.787, z: -8.43}
 --- !u!54 &490556354
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8789,8 +8789,8 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -41121,7 +41121,7 @@ MonoBehaviour:
   - {fileID: 838917996}
   - {fileID: 1851281722}
   player: {fileID: 534669902}
-  weighplate: {x: 24, y: -2.12, z: 4.7}
+  weighplate: {x: 24.4, y: -1.787, z: -4.816}
 --- !u!54 &2084798999
 Rigidbody:
   m_ObjectHideFlags: 0

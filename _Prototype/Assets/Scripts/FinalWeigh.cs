@@ -32,7 +32,7 @@ public class FinalWeigh : MonoBehaviour
         foreach (var item in weighs)
             {
             if (item == true)
-            {
+            {   
                 complete++;
                 Debug.Log(complete);
             }
