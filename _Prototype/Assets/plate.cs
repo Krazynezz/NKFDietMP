@@ -40,11 +40,12 @@ public class plate : MonoBehaviour
             if (divisionright == true)
             {
                 eaten = true;    
-                Destroy(this.gameObject);
                 if (bottle.hydate == true)
                 {
                     door.GetComponent<Animator>().SetBool("character_nearby", true);
-                }
+                }    
+                Destroy(this.gameObject);
+
             }
 
         }

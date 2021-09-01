@@ -17,38 +17,46 @@ public class curvepipe : MonoBehaviour
             waypoints[i] = child;
             i++;
 
-        } 
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void OnTriggerEnter(Collider other)
     {
+        other.GetComponent<flowing>().enabled = false;
         i = 0;
         foreach (var item in waypoints)
         {
             distance[i] = Vector3.Distance(other.transform.position, item.transform.position);
             i++;
         }
+
         if (Mathf.Min(distance) == distance[0])
         {
-            i = 0;
-            other.transform.position = Vector3.MoveTowards(other.transform.position, waypoints[i].position, 0.001f);
-            if (Vector3.Distance(other.transform.position, waypoints[i].position)<1 && i<3)
+            int w = 0;
+            while (w < waypoints.Length)
             {
-                i++;
+                other.transform.position = Vector3.MoveTowards(other.transform.position, waypoints[w].position, 0.001f);
+                if (Vector3.Distance(other.transform.position, waypoints[w].position) < 1)
+                {
+                    w++;
+                }
             }
         }
         if (Mathf.Min(distance) == distance[3])
         {
-            i = 3;
-            other.transform.position = Vector3.MoveTowards(other.transform.position, waypoints[i].position, 0.001f);
-            if (Vector3.Distance(other.transform.position, waypoints[i].position) < 1 && i >0)
+            int w = waypoints.Length - 1;
+            while (w >= 0)
             {
-                i--;
+                other.transform.position = Vector3.MoveTowards(other.transform.position, waypoints[w].position, 0.001f);
+                if (Vector3.Distance(other.transform.position, waypoints[w].position) < 1)
+                {
+                    w--;
+                }
             }
         }
     }
