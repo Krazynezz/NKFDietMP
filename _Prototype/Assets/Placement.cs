@@ -33,7 +33,7 @@ public class Placement : MonoBehaviour
                 {
                     player.GetComponent<move>().interacted = false;
                     item.transform.position = transform.position + Vector3.up/5;
-                    item.transform.rotation = Quaternion.Euler(0, 90, 0);
+                    item.transform.rotation = Quaternion.Euler(0, -90, 0);
                     done = true;
             if (item.name == correct)
             {
