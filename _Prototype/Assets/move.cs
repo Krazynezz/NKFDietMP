@@ -17,7 +17,7 @@ public class move : MonoBehaviour
         Vector3 left;
         string [] input = new string[4];
         int order;
-    string[] rightans = new string[4] { "1","2","3","4"};
+    string[] rightans = new string[4] { "2","1","7","3"};
     float answered;
     public GameObject crosshair;
 
