@@ -3697,7 +3697,7 @@ MonoBehaviour:
     type: 3}
   player: {fileID: 534669902}
   container: {fileID: 122779651}
-  correct: 
+  correct: T
 --- !u!1001 &158390928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14021,7 +14021,7 @@ MonoBehaviour:
     type: 3}
   player: {fileID: 534669902}
   container: {fileID: 122779651}
-  correct: 
+  correct: R
 --- !u!1001 &751710247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25293,7 +25293,7 @@ MonoBehaviour:
     type: 3}
   player: {fileID: 534669902}
   container: {fileID: 122779651}
-  correct: 
+  correct: E
 --- !u!1001 &1304257908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33174,7 +33174,7 @@ MonoBehaviour:
     type: 3}
   player: {fileID: 534669902}
   container: {fileID: 122779651}
-  correct: 
+  correct: W
 --- !u!1001 &1742869860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38368,7 +38368,7 @@ MonoBehaviour:
     type: 3}
   player: {fileID: 534669902}
   container: {fileID: 122779651}
-  correct: 
+  correct: A
 --- !u!1001 &1959002923
 PrefabInstance:
   m_ObjectHideFlags: 0
