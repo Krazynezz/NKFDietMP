@@ -9151,7 +9151,7 @@ MonoBehaviour:
   - {fileID: 1678559027}
   - {fileID: 1004166320}
   player: {fileID: 534669902}
-  weighplate: {x: 24, y: -1.787, z: -8.43}
+  weighplate: {x: 24.4, y: -1.787, z: -11.9}
 --- !u!54 &490556354
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10919,7 +10919,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.595, y: -0.98, z: -7.233}
+  m_LocalPosition: {x: 14.188, y: -0.98, z: -9.865}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
