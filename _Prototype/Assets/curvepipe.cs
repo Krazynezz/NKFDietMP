@@ -17,7 +17,7 @@ public class curvepipe : MonoBehaviour
             waypoints[i] = child;
             i++;
 
-        }
+        } 
     }
 
     // Update is called once per frame
