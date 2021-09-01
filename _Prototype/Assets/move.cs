@@ -102,7 +102,7 @@ public class move : MonoBehaviour
             }
                 if (interacted)
             {
-                interacting.transform.position = this.transform.position + transform.forward;
+                interacting.transform.position = this.transform.position + transform.forward - transform.up;
                 interacting.transform.rotation = this.transform.rotation;
             }
         }
