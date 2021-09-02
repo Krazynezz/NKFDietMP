@@ -27,7 +27,7 @@ public class bottle : MonoBehaviour
             hydate = true;
             if (plate.eaten == true)
             {
-                plate.door.GetComponent<Animator>().SetBool("character_nearby", true);
+                //plate.GetComponent<Animator>().SetBool("character_nearby", true);
             }
         }
 

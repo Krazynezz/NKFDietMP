@@ -18,6 +18,7 @@ public class move : MonoBehaviour
         string [] input = new string[4];
         int order;
     string[] rightans = new string[4] { "2","1","7","3"};
+    public GameObject[] keylights = new GameObject[4];
     float answered;
     public GameObject crosshair;
 
@@ -71,6 +72,7 @@ public class move : MonoBehaviour
                 if (objects.collider.tag == "button")
                 {
                     input[order] = objects.collider.name;
+                    keylights[order].GetComponent<MeshRenderer>().material.color = Color.green;
                     order += 1;
                     Debug.Log(input[order - 1]);
                     if (order == 4)
@@ -88,6 +90,10 @@ public class move : MonoBehaviour
                         }
                         if (answered < 4)
                         {
+                            foreach (var item in keylights)
+                            {
+                                item.GetComponent<MeshRenderer>().material.color = Color.red;
+                            }
                             order = 0;
                             answered = 0;
                         }
