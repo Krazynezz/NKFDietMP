@@ -25,7 +25,7 @@ public class canister : MonoBehaviour
         if (other.tag == "replicator")
         {
             player.GetComponent<move>().interacted = false;
-            this.gameObject.transform.position = end + off * cancount;
+            this.gameObject.transform.position = end;
             this.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
             cancount += 1;
         }
