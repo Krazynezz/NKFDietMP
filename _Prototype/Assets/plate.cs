@@ -7,7 +7,7 @@ public class plate : MonoBehaviour
     Vector3 origin;
     public bool divisionright = false;
     public GameObject player;
-    public static GameObject door;
+    public GameObject door;
     public static bool eaten = false;
 
     // Start is called before the first frame update
