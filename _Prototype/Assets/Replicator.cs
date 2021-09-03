@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,6 @@ using UnityEngine.Events;
 
 public class Replicator : MonoBehaviour
 {
-   /*
     [SerializeField] private float threshold = 0.1f;
     [SerializeField] private float deadZone =0.025f;
 
@@ -58,5 +58,4 @@ public class Replicator : MonoBehaviour
         onReleased.Invoke();
         Debug.Log("Released");
     }
-   */
 }
