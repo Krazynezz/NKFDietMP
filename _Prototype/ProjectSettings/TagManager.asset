@@ -10,6 +10,10 @@ TagManager:
   - button
   - hemo
   - peritonial
+  - water
+  - end
+  - pipe
+  - BGM
   layers:
   - Default
   - TransparentFX

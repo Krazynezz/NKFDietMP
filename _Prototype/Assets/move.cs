@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class move : MonoBehaviour
     {
+    Vector3 origin;
+    Quaternion originrot;
         public CharacterController player;
         public Transform rotation;
     public GameObject redcan;
@@ -21,6 +23,9 @@ public class move : MonoBehaviour
     public GameObject[] keylights = new GameObject[4];
     float answered;
     public GameObject crosshair;
+    public bool maze;
+    public bool pipes;
+    public GameObject teleporter;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +48,10 @@ public class move : MonoBehaviour
 
     void Update()
         {
+        if(maze == true && pipes == true)
+        {
+            teleporter.active = true;
+        }
         transform.eulerAngles += new Vector3(Input.GetAxis("Mouse Y") * -1, Input.GetAxis("Mouse X"), 0);
 
         if (Input.GetButtonDown("Fire1"))
@@ -52,6 +61,8 @@ public class move : MonoBehaviour
             {
                 if (objects.collider.tag == "interactable")
                 {
+                    origin =  objects.transform.position;
+                    originrot = objects.transform.rotation;
                     interacting = objects.collider.gameObject;
                     interacted = true;
                 }
@@ -103,8 +114,13 @@ public class move : MonoBehaviour
             }
             if (Input.GetButtonDown("Fire2"))
             {
+            if (interacting != null)
+            {
+                interacting.transform.position = origin;
+                interacting.transform.rotation = originrot;
                 interacting = null;
                 interacted = false;
+            }
             }
                 if (interacted)
             {

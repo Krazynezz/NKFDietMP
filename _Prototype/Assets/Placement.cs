@@ -9,7 +9,7 @@ public class Placement : MonoBehaviour
     public GameObject player;
     public GameObject container;
     bool done = false;
-    static float cheat;
+    static float canned;
     public string correct;
 
 
@@ -23,8 +23,7 @@ public class Placement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(cheat);
-            }
+    }
     private void OnTriggerEnter(Collider item)
     {
         
@@ -37,14 +36,14 @@ public class Placement : MonoBehaviour
                     done = true;
             if (item.name == correct)
             {
-                cheat += 1;
+                canned += 1;
             }  }
             
         
-        if (cheat == 5)
+        if (canned == 5)
         {
             Instantiate(Waterbottle,container.transform.position,Quaternion.identity);
-            cheat += 1;
+            canned += 1;
         }
     }
     private void OnTriggerExit(Collider item)
@@ -52,7 +51,7 @@ public class Placement : MonoBehaviour
         done = false;
         if (item.name == correct)
         {
-            cheat -= 1;
+            canned -= 1;
         }
     }
 }

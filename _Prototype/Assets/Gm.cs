@@ -13,11 +13,19 @@ public class Gm : MonoBehaviour
     public GameObject spawning2;
     public GameObject spawningpipe;
     float spawned = 1;
+    move refer;
+
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.None;
         spawn = spawningpipe.transform.position;
+        foreach (var item in GameObject.FindGameObjectsWithTag("MainCamera"))
+        {
+            if (item.GetComponent<move>())
+                refer = item.GetComponent<move>();
+        }
+        refer.enabled = false;
     }
 
     // Update is called once per frame
@@ -39,7 +47,9 @@ public class Gm : MonoBehaviour
         if (Input.GetButtonDown("Fire2"))
         {
             SceneManager.UnloadScene("Pipes");
-            Cursor.lockState = CursorLockMode.Locked;            
+            Cursor.lockState = CursorLockMode.Locked;
+            refer.enabled = true;
+            refer.pipes = true;
         }
         elaspe += Time.deltaTime;
          if (Mathf.Ceil(elaspe) % 5 ==0 && Mathf.Ceil(elaspe) / 10 == spawned)

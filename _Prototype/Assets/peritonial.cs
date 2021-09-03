@@ -50,6 +50,7 @@ public class peritonial : MonoBehaviour
         {
             refer.crosshair.active = true;
             refer.enabled = true;
+            refer.maze = true; ;
             SceneManager.UnloadSceneAsync("Maze");
         }
     }
