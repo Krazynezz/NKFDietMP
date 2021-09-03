@@ -24,7 +24,13 @@ public class peritonial : MonoBehaviour
     void Update()
     {
         this.gameObject.GetComponent<Rigidbody>().position += new Vector3(Input.GetAxis("Horizontal") / 100, 0, 0);
-
+        if(Input.GetButton("Fire2"))
+        {
+            refer.crosshair.active = true;
+            refer.enabled = true;
+            refer.maze = true; ;
+            SceneManager.UnloadSceneAsync("Maze");
+        }
     }
     private void FixedUpdate()
 
