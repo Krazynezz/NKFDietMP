@@ -14,6 +14,8 @@ TagManager:
   - end
   - pipe
   - BGM
+  - FWFruit
+  - FinalWeigh
   layers:
   - Default
   - TransparentFX

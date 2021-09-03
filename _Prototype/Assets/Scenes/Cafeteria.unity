@@ -1653,7 +1653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1802840387486672, guid: 8f38e57a49b1c844081ad6bb3c553f13, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: FWFruit
       objectReference: {fileID: 0}
     - target: {fileID: 4785770825739254, guid: 8f38e57a49b1c844081ad6bb3c553f13, type: 3}
       propertyPath: m_RootOrder
@@ -6899,6 +6899,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: weigh (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1c65826bfeb54a248bc4fada65de56d9,
+        type: 3}
+      propertyPath: m_TagString
+      value: FinalWeigh
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c65826bfeb54a248bc4fada65de56d9, type: 3}
 --- !u!4 &300866383 stripped
@@ -6948,6 +6953,8 @@ MonoBehaviour:
   - {fileID: 415093704}
   player: {fileID: 534669902}
   weighplate: {x: 24.4, y: -1.72, z: -8.3}
+  DestroyWeigh: {fileID: 0}
+  DestroyFruit: {fileID: 0}
 --- !u!54 &300866389
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8902,7 +8909,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415093704}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.149, y: -1.653, z: -12.035}
+  m_LocalPosition: {x: 21.149, y: -1.653, z: -10.869}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children:
   - {fileID: 414863338}
@@ -8917,7 +8924,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415093706}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 23.46}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 414863336}
@@ -10574,6 +10581,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: weigh (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1c65826bfeb54a248bc4fada65de56d9,
+        type: 3}
+      propertyPath: m_TagString
+      value: FinalWeigh
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c65826bfeb54a248bc4fada65de56d9, type: 3}
 --- !u!4 &490556348 stripped
@@ -10621,6 +10633,8 @@ MonoBehaviour:
   - {fileID: 1004166320}
   player: {fileID: 534669902}
   weighplate: {x: 24.4, y: -1.787, z: -11.9}
+  DestroyWeigh: {fileID: 0}
+  DestroyFruit: {fileID: 0}
 --- !u!54 &490556354
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12221,7 +12235,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52.308, y: -1.1, z: -38.47}
+  m_LocalPosition: {x: 20.892, y: -1.1, z: -6.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -24717,7 +24731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829371231341652, guid: 426b44a7575f71e479fab4f4e8431989, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: FWFruit
       objectReference: {fileID: 0}
     - target: {fileID: 4411128782263238, guid: 426b44a7575f71e479fab4f4e8431989, type: 3}
       propertyPath: m_RootOrder
@@ -27129,7 +27143,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829371231341652, guid: 426b44a7575f71e479fab4f4e8431989, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: FWFruit
       objectReference: {fileID: 0}
     - target: {fileID: 4411128782263238, guid: 426b44a7575f71e479fab4f4e8431989, type: 3}
       propertyPath: m_RootOrder
@@ -35231,7 +35245,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566116577}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.991, y: -1.654, z: -2.424}
+  m_LocalPosition: {x: 20.991, y: -1.654, z: -2.896}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children:
   - {fileID: 1566480067}
@@ -35246,7 +35260,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566116579}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -13.340001}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1566480065}
@@ -36552,7 +36566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1802840387486672, guid: 8f38e57a49b1c844081ad6bb3c553f13, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: FWFruit
       objectReference: {fileID: 0}
     - target: {fileID: 4785770825739254, guid: 8f38e57a49b1c844081ad6bb3c553f13, type: 3}
       propertyPath: m_RootOrder
@@ -40619,7 +40633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1724972533694550, guid: 63e523ab5d9ce7348b431ae1d689a54d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: FWFruit
       objectReference: {fileID: 0}
     - target: {fileID: 4863069348827460, guid: 63e523ab5d9ce7348b431ae1d689a54d, type: 3}
       propertyPath: m_RootOrder
@@ -43695,7 +43709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1724972533694550, guid: 63e523ab5d9ce7348b431ae1d689a54d, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: FWFruit
       objectReference: {fileID: 0}
     - target: {fileID: 4863069348827460, guid: 63e523ab5d9ce7348b431ae1d689a54d, type: 3}
       propertyPath: m_RootOrder
@@ -46862,6 +46876,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: weigh (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1c65826bfeb54a248bc4fada65de56d9,
+        type: 3}
+      propertyPath: m_TagString
+      value: FinalWeigh
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c65826bfeb54a248bc4fada65de56d9, type: 3}
 --- !u!4 &2084798993 stripped
@@ -46911,6 +46930,8 @@ MonoBehaviour:
   - {fileID: 415093704}
   player: {fileID: 534669902}
   weighplate: {x: 24.4, y: -1.8, z: -4.7}
+  DestroyWeigh: {fileID: 0}
+  DestroyFruit: {fileID: 0}
 --- !u!54 &2084798999
 Rigidbody:
   m_ObjectHideFlags: 0

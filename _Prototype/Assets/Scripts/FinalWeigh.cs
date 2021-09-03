@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 public class FinalWeigh : MonoBehaviour
@@ -14,10 +15,17 @@ public class FinalWeigh : MonoBehaviour
     static int complete = 0;
     public Vector3 weighplate;
     Vector3 off;
+
+    public GameObject DestroyWeigh;
+    public GameObject DestroyFruit;
+
     // Start is called before the first frame update
     void Start()
     {
         off = new Vector3(0.4f, 0, 0);
+        DestroyFruit = GameObject.FindGameObjectWithTag("FWFruit");
+        DestroyWeigh = GameObject.FindGameObjectWithTag("FinalWeigh");
+        
     }
 
     // Update is called once per frame
@@ -34,7 +42,7 @@ public class FinalWeigh : MonoBehaviour
             if (item == true)
             {   
                 complete++;
-                Debug.Log(complete);
+                
             }
             if (item == false)
             {
@@ -44,6 +52,8 @@ public class FinalWeigh : MonoBehaviour
         if (complete ==3)
         {
             Destroy(this.gameObject);
+            DestroyObject(DestroyWeigh);
+            DestroyObject(DestroyFruit);
             connectdoor.GetComponent<Animator>().SetBool("character_nearby", true);
             connectdoor2.GetComponent<Animator>().SetBool("character_nearby", true);
         }
