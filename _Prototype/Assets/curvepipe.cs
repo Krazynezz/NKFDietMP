@@ -5,11 +5,11 @@ using UnityEngine;
 public class curvepipe : MonoBehaviour
 {    
     float[] rotations = { 0, 90, 180, 270 };
-    Transform[] waypoints = new Transform[4];
-    float[] distance = new float[4];
+    Transform[] waypoints = new Transform[6];
+    float[] distance = new float[6];
     int i = 0;
-    int head = 0;
-    int tail = 3;
+    int head = 1;
+    int tail = 4;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,31 +38,38 @@ void Update()
             distance[i] = Vector3.Distance(other.transform.position, item.transform.position);
             i++;
         }
+        i = 0;
 
     }
     private void OnTriggerStay(Collider other)
     {
-        if (Mathf.Min(distance) == distance[0])
+        if (Mathf.Min(distance) == distance[1])
         {
             {
                 other.transform.position = Vector3.MoveTowards(other.transform.position, waypoints[head].position, 0.001f);
                 if (Vector3.Distance(other.transform.position, waypoints[head].position) < 0.001)
                 {
+                    Debug.Log(head);
                     head++;
                 }
-                if(head >=4)
+                if(head >=6)
                 {
                     
                 }
             }
         }
-        if (Mathf.Min(distance) == distance[3])
+        if (Mathf.Min(distance) == distance[4])
         {
             other.transform.position = Vector3.MoveTowards(other.transform.position, waypoints[tail].position, 0.001f);
             if (Vector3.Distance(other.transform.position, waypoints[tail].position) < 0.001)
             {
+                Debug.Log(tail);
                 tail--;
             }         
         }
         }
+    private void OnTriggerExit(Collider other)
+    {
+        
     }
+}
