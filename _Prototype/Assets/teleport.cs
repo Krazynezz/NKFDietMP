@@ -30,9 +30,12 @@ public class teleport : MonoBehaviour
         {
             Instantiate(kidneys, this.transform, true);
             triggered2 = true;
+        }
+        if (triggered2 == true)
+        {
             delay += Time.deltaTime;
         }
-        if(delay >= 1)
+        if (delay >= 1)
         {
             endscreen.active = true;
         }

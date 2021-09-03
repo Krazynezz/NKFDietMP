@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.4660946, g: 0.4657923, b: 0.46188897, a: 1}
+  m_IndirectSpecularColor: {r: 0.46613812, g: 0.46583676, b: 0.4619301, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12004,7 +12004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -52.7, y: -1.1, z: -39.5}
+  m_LocalPosition: {x: 31.3, y: -1.1, z: -28.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12021,7 +12021,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 1.8
   m_Radius: 0.2
   m_SlopeLimit: 180
   m_StepOffset: 0
@@ -22913,6 +22913,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 548a40efc092c6f408cc4d1691b171cc, type: 3}
+--- !u!1 &1025117889 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 115324, guid: 820591594dcfa124d8a9c5d016d6c22c,
+    type: 3}
+  m_PrefabInstance: {fileID: 830950828}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1029943176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34151,7 +34157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   divisionright: 0
   player: {fileID: 534669902}
-  door: {fileID: 0}
+  door: {fileID: 1025117889}
 --- !u!65 &1534231964
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34814,7 +34820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   divisionright: 0
   player: {fileID: 534669902}
-  door: {fileID: 0}
+  door: {fileID: 1025117889}
 --- !u!65 &1572988153
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36516,7 +36522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   divisionright: 1
   player: {fileID: 534669902}
-  door: {fileID: 0}
+  door: {fileID: 1025117889}
 --- !u!65 &1676512976
 BoxCollider:
   m_ObjectHideFlags: 0
