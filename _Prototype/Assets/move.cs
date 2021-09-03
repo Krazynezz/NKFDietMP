@@ -41,7 +41,7 @@ public class move : MonoBehaviour
         left = transform.right * Input.GetAxis("Horizontal");
         movement = front + left;
         movement.y = 0;
-        player.Move(movement / 10);
+        player.Move(movement / 20);
         player.transform.position = new Vector3(transform.position.x,-1.1f,transform.position.z);
 
     }
