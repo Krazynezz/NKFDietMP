@@ -38,8 +38,6 @@ void Update()
             distance[i] = Vector3.Distance(other.transform.position, item.transform.position);
             i++;
         }
-        i = 0;
-
     }
     private void OnTriggerStay(Collider other)
     {
@@ -70,6 +68,8 @@ void Update()
         }
     private void OnTriggerExit(Collider other)
     {
-        
+        tail = 4;
+        head = 1;
+
     }
 }
