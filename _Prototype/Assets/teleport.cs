@@ -11,7 +11,8 @@ public class teleport : MonoBehaviour
     bool triggered = false;
     public GameObject kidneys;
     bool triggered2 = false;
-
+    public GameObject endscreen;
+    float delay;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,14 @@ public class teleport : MonoBehaviour
         {
             Instantiate(kidneys, this.transform, true);
             triggered2 = true;
+        }
+        if (triggered2 == true)
+        {
+            delay += Time.deltaTime;
+        }
+        if (delay >= 1)
+        {
+            endscreen.active = true;
         }
     }
     private void OnTriggerEnter(Collider other)

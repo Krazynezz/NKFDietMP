@@ -36,11 +36,13 @@ public class move : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
+
            front = transform.forward * Input.GetAxis("Vertical");
         left = transform.right * Input.GetAxis("Horizontal");
         movement = front + left;
         movement.y = 0;
         player.Move(movement / 10);
+        player.transform.position = new Vector3(transform.position.x,-1.1f,transform.position.z);
 
     }
  
