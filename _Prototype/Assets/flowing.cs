@@ -16,7 +16,7 @@ public class flowing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.gameObject.transform.position -= transform.right/500;
+        this.gameObject.transform.position -= transform.right/5000;
         Collider[] hitColliders = Physics.OverlapBox(this.gameObject.transform.position,Vector3.one/10);
         foreach (var item in hitColliders)
         {
@@ -26,7 +26,7 @@ public class flowing : MonoBehaviour
             }
         }
     }
-    /*
+    
     private void OnTriggerEnter(Collider other)
     {
 
@@ -40,5 +40,5 @@ public class flowing : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     { 
-    }*/
+    }
 }

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class curvepipe : MonoBehaviour
-{
+{    
+    float[] rotations = { 0, 90, 180, 270 };
     Transform[] waypoints = new Transform[4];
     float[] distance = new float[4];
     int i = 0;
@@ -12,6 +13,8 @@ public class curvepipe : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        int rand = Random.Range(0, rotations.Length);
+        transform.RotateAround(this.gameObject.GetComponent<Collider>().bounds.center, Vector3.forward, rotations[rand]);
         foreach (Transform child in transform)
         {
             waypoints[i] = child;
@@ -20,8 +23,9 @@ public class curvepipe : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+
+// Update is called once per frame
+void Update()
     {
 
     }
@@ -45,6 +49,10 @@ public class curvepipe : MonoBehaviour
                 if (Vector3.Distance(other.transform.position, waypoints[head].position) < 0.001)
                 {
                     head++;
+                }
+                if(head >=4)
+                {
+                    
                 }
             }
         }
