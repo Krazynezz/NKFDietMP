@@ -5575,8 +5575,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 5, y: 2, z: 2}
+  m_Center: {x: -1.66, y: 0, z: 0}
 --- !u!23 &238712290
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5639,14 +5639,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c79b850aed8e75343baa6c869f05c06c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  threshold: 0.1
-  deadZone: 0.025
-  onPressed:
-    m_PersistentCalls:
-      m_Calls: []
-  onReleased:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!153 &238712293
 ConfigurableJoint:
   m_ObjectHideFlags: 0

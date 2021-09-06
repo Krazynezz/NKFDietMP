@@ -6,6 +6,7 @@ using UnityEngine.Events;
 
 public class Replicator : MonoBehaviour
 {
+    /*
     [SerializeField] private float threshold = 0.1f;
     [SerializeField] private float deadZone =0.025f;
 
@@ -57,5 +58,11 @@ public class Replicator : MonoBehaviour
         _isPressed = false;
         onReleased.Invoke();
         Debug.Log("Released");
+    }
+    */
+
+    private void OnMouseDown()
+    {
+        Debug.Log("Button Clicked");
     }
 }
