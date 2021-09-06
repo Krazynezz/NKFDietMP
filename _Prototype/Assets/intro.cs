@@ -21,6 +21,6 @@ public class intro : MonoBehaviour
             crosshair.active = true;
             this.gameObject.active = false;
 
-        }
+        }   
     }
 }
