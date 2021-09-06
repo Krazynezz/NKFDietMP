@@ -6,21 +6,35 @@ public class intro : MonoBehaviour
 {
     public GameObject crosshair;
     public GameObject player;
+    public bool lastintro;
+    public GameObject nextintro;
+    float delay;
     // Start is called before the first frame update
     void Start()
     {
-        player.GetComponent<move>().enabled = false;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKey)
+        delay += Time.deltaTime;
+        if (delay > 3)
         {
-            player.GetComponent<move>().enabled = true;
-            crosshair.active = true;
-            this.gameObject.active = false;
+            if (Input.anyKey)
+            {
+                this.gameObject.active = false;
 
+                if (lastintro == true)
+                {
+                    player.GetComponent<move>().enabled = true;
+                    crosshair.active = true;
+                }
+                else
+                {
+                    nextintro.active = true;
+                }
+            }
         }   
     }
 }

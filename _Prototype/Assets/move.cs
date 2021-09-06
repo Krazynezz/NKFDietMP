@@ -23,18 +23,22 @@ public class move : MonoBehaviour
     public GameObject[] keylights = new GameObject[4];
     float answered;
     public GameObject crosshair;
+    public GameObject crosshand;
     public bool maze;
     public bool pipes;
     public GameObject teleporter;
+    Outline outline;
 
     // Start is called before the first frame update
     void Start()
         {
         foreach (var item in  GameObject.FindGameObjectsWithTag("interactable"))
         {
-            item.AddComponent<Outline>();
-        }    
-            Cursor.lockState = CursorLockMode.Locked;
+            outline =  item.AddComponent<Outline>();
+            outline.OutlineMode = Outline.Mode.OutlineVisible;
+            outline.OutlineWidth = 10f;
+        }
+        Cursor.lockState = CursorLockMode.Locked;
         }
 
     // Update is called once per frame
@@ -58,12 +62,16 @@ public class move : MonoBehaviour
         {
             teleporter.active = true;
         }
+
         transform.eulerAngles += new Vector3(Input.GetAxis("Mouse Y") * -1, Input.GetAxis("Mouse X"), 0);
 
-        if (Input.GetButtonDown("Fire1"))
-            {
+
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out objects, 1))
+            {
+            crosshair.active = false;
+            crosshand.active = true;
+            if (Input.GetButtonDown("Fire1") && interacting == null)
             {
                 if (objects.collider.tag == "interactable")
                 {
@@ -118,16 +126,19 @@ public class move : MonoBehaviour
                 }
             }
             }
-            if (Input.GetButtonDown("Fire2"))
-            {
-            if (interacting != null)
+       else
+        {
+            crosshair.active = true;
+            crosshand.active =false;
+        }
+            if (Input.GetButtonDown("Fire2") && interacting != null)
             {
                 interacting.transform.position = origin;
                 interacting.transform.rotation = originrot;
                 interacting = null;
                 interacted = false;
             }
-            }
+            
                 if (interacted)
             {
                 interacting.transform.position = this.transform.position + transform.forward - transform.up/10;
