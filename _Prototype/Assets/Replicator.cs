@@ -8,22 +8,20 @@ public class Replicator : MonoBehaviour
 {
     [HideInInspector]
     public canister canister;
-    bool platePlaced = false;
+    [HideInInspector]
+    public bool platePlaced = false;
 
-    private void OnMouseDown()
-    {
-        Debug.Log("Button Clicked");
-        if (canister.cancount == 3 && platePlaced == true)
-        {
-            Debug.Log("3 canisters placed");
-        }
-
-    }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.name == "PlateOne" || other.name == "PlateTwo" || other.name == "PlateThree")
         {
-            Debug.Log("Hello");
+            platePlaced = true;
+            Debug.Log("Plate placed: "+ other.gameObject.name);  
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        platePlaced = false;
     }
 }
