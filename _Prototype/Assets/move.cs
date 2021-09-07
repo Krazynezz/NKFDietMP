@@ -71,7 +71,7 @@ public class move : MonoBehaviour
             {
             crosshair.active = false;
             crosshand.active = true;
-            if (Input.GetButtonDown("Fire1") && interacting == null)
+            if (Input.GetButtonDown("Fire1") && interacted == false)
             {
                 if (objects.collider.tag == "interactable")
                 {

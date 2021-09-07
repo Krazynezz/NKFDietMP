@@ -12,9 +12,5 @@ public class Replicator : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("Button Clicked");
-        if (placement.done == true)
-        {
-            Debug.Log("Cans Placed");
-        }
     }
 }

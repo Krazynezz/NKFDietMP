@@ -19,7 +19,7 @@ public class intro : MonoBehaviour
     void Update()
     {
         delay += Time.deltaTime;
-        if (delay > 3)
+        if (delay > 1)
         {
             if (Input.anyKey)
             {

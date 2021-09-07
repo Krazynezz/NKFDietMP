@@ -8,7 +8,7 @@ public class Placement : MonoBehaviour
     public GameObject Waterbottle;
     public GameObject player;
     public GameObject container;
-    public bool done = false;
+    bool done = false;
     static float canned;
     public string correct;
 
