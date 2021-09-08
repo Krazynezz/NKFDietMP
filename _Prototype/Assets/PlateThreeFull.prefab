@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5853456317662578433}
   m_Layer: 0
   m_Name: uploads_files_261281_bread
-  m_TagString: interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 5853456317922229717}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 5853456318087555186}
   m_Layer: 0
   m_Name: bread (8)
-  m_TagString: interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 5853456318093906377}
   m_Layer: 0
   m_Name: bread (9)
-  m_TagString: interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 5853456318134710046}
   m_Layer: 0
   m_Name: bread (10)
-  m_TagString: interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 5853456318165981247}
   m_Layer: 0
   m_Name: bread (7)
-  m_TagString: interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 5853456318174631222}
   m_Layer: 0
   m_Name: uploads_files_261281_bread
-  m_TagString: interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -390,7 +390,7 @@ GameObject:
   - component: {fileID: 5853456318424908937}
   m_Layer: 0
   m_Name: uploads_files_261281_bread
-  m_TagString: interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 5853456318506200042}
   m_Layer: 0
   m_Name: bread (6)
-  m_TagString: interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 5853456318583575956}
   m_Layer: 0
   m_Name: uploads_files_261281_bread
-  m_TagString: interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -587,7 +587,7 @@ GameObject:
   - component: {fileID: 5853456318802108874}
   m_Layer: 0
   m_Name: uploads_files_261281_bread
-  m_TagString: interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -671,7 +671,7 @@ GameObject:
   - component: {fileID: 5853456318847698288}
   m_Layer: 0
   m_Name: Tofu (1)
-  m_TagString: interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -925,7 +925,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: fd6ef92dd79c1e842bddca67f812a545,
         type: 3}
       propertyPath: m_TagString
-      value: interactable
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd6ef92dd79c1e842bddca67f812a545, type: 3}
@@ -948,7 +948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1802840387486672, guid: 8f38e57a49b1c844081ad6bb3c553f13, type: 3}
       propertyPath: m_TagString
-      value: interactable
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4785770825739254, guid: 8f38e57a49b1c844081ad6bb3c553f13, type: 3}
       propertyPath: m_RootOrder
@@ -1027,7 +1027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1829371231341652, guid: 426b44a7575f71e479fab4f4e8431989, type: 3}
       propertyPath: m_TagString
-      value: interactable
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 4411128782263238, guid: 426b44a7575f71e479fab4f4e8431989, type: 3}
       propertyPath: m_RootOrder
