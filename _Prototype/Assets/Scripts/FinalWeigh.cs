@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 
+
 public class FinalWeigh : MonoBehaviour
 {
     float num = 0;
@@ -15,6 +16,7 @@ public class FinalWeigh : MonoBehaviour
     static int complete = 0;
     public Vector3 weighplate;
     Vector3 off;
+    float num2 = 0;
 
     GameObject[] fruitObjects;
     GameObject[] weighObjects;
@@ -84,12 +86,18 @@ public class FinalWeigh : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "interactable" )
+        if (other.tag == "interactable" && num2 < 2)
         {
             player.GetComponent<move>().interacted = false;
-            other.transform.position = weighplate + off *(num-1);
+            other.transform.position = weighplate + off *(num2-1);
             other.transform.rotation = Quaternion.Euler(0, 0, 0);
+            UnityEngine.Debug.Log(num2);
+            num2++;
+            
         }
+
+        
+       
         foreach (var item in root)
         {
             if (other.gameObject == item)
@@ -100,6 +108,30 @@ public class FinalWeigh : MonoBehaviour
         }
    
     }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.tag == "interactable")
+        {
+            foreach (var item in root)
+            {
+                if (other.gameObject == item)
+                {
+                    num--;
+                }
+            }
+
+            num2--;
+
+            UnityEngine.Debug.Log(num);
+
+        }
+
+        
+    }
+    
+
+        
 
     void DestroyAllFinalWeighObjects()
     {
@@ -163,4 +195,6 @@ public class FinalWeigh : MonoBehaviour
         Destroy(L1);
         Destroy(L2);
     }
+
+    
 }
