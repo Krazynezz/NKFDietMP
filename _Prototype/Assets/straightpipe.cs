@@ -12,7 +12,13 @@ public class straightpipe : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        int rand = Random.Range(0, rotations.Length);
+        transform.RotateAround(this.gameObject.GetComponent<Collider>().bounds.center, Vector3.forward, rotations[rand]);
+        foreach (Transform child in transform)
+        {
+            waypoints[i] = child;
+            i++;
+        }
     }
 
     // Update is called once per frame
@@ -39,5 +45,11 @@ public class straightpipe : MonoBehaviour
                 path++;
             }
         }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        i = 0;
+        path = 1;
+
     }
 }

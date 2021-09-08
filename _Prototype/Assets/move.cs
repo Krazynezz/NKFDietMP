@@ -32,12 +32,6 @@ public class move : MonoBehaviour
     // Start is called before the first frame update
     void Start()
         {
-        foreach (var item in GameObject.FindGameObjectsWithTag("interactable"))
-        {
-            outline = item.AddComponent<Outline>();
-            outline.OutlineMode = Outline.Mode.OutlineVisible;
-            outline.OutlineWidth = 10f;
-        }
         Cursor.lockState = CursorLockMode.Locked;
         }
 
