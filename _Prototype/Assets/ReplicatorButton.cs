@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ReplicatorButton : MonoBehaviour
 {
-    [HideInInspector]
     public Replicator replicator;
 
     private void OnMouseDown()
