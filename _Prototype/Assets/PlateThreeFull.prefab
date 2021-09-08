@@ -766,8 +766,8 @@ GameObject:
   - component: {fileID: 5853456319510948377}
   - component: {fileID: 5853456319510948378}
   m_Layer: 0
-  m_Name: PlateThree (1)
-  m_TagString: Untagged
+  m_Name: PlateThreeFull
+  m_TagString: interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -838,8 +838,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   divisionright: 1
-  player: {fileID: 0}
-  door: {fileID: 0}
+  player: {fileID: 507089433298033616, guid: d3fc3b63a11eda3408cc5a38bc1645af, type: 3}
+  door: {fileID: 115324, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
 --- !u!1001 &5853456318654294767
 PrefabInstance:
   m_ObjectHideFlags: 0

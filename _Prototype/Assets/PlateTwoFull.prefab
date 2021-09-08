@@ -661,8 +661,8 @@ GameObject:
   - component: {fileID: 7941347331925559971}
   - component: {fileID: 7941347331925559972}
   m_Layer: 0
-  m_Name: PlateTwo (1)
-  m_TagString: Untagged
+  m_Name: PlateTwoFull
+  m_TagString: interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -716,7 +716,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7941347331925559974}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -734,8 +734,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   divisionright: 0
-  player: {fileID: 0}
-  door: {fileID: 0}
+  player: {fileID: 507089433298033616, guid: d3fc3b63a11eda3408cc5a38bc1645af, type: 3}
+  door: {fileID: 115324, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
 --- !u!1 &7941347332037737569
 GameObject:
   m_ObjectHideFlags: 0

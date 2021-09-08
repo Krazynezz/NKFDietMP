@@ -106,8 +106,8 @@ GameObject:
   - component: {fileID: 5065304757908811273}
   - component: {fileID: 5065304757908811272}
   m_Layer: 0
-  m_Name: PlateOne (1)
-  m_TagString: Untagged
+  m_Name: PlateOneFull
+  m_TagString: interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -180,8 +180,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   divisionright: 0
-  player: {fileID: 0}
-  door: {fileID: 0}
+  player: {fileID: 507089433298033616, guid: d3fc3b63a11eda3408cc5a38bc1645af, type: 3}
+  door: {fileID: 115324, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
 --- !u!1 &5065304757993658372
 GameObject:
   m_ObjectHideFlags: 0
