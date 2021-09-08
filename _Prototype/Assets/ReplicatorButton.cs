@@ -6,7 +6,6 @@ public class ReplicatorButton : MonoBehaviour
 {
     public Replicator replicator;
     
-
     private void OnMouseDown()
     {
         Debug.Log(canister.cancount);
