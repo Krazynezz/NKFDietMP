@@ -29,7 +29,7 @@ public class FirewallScript : MonoBehaviour
     {
         if (other.tag == "interactable" && (other.name == "Cereal")|| other.name == "CanModel")
         {
-            off = new Vector3(0, 1, num) /3;
+            off = new Vector3(0, 0.7f, num) /3;
             player.GetComponent<move>().interacted = false;
             other.gameObject.transform.position = this.gameObject.transform.position + off;
             other.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);

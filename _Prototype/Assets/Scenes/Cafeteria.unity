@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.46613812, g: 0.46583676, b: 0.4619301, a: 1}
+  m_IndirectSpecularColor: {r: 0.46613818, g: 0.46583682, b: 0.4619301, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7124,7 +7124,7 @@ MonoBehaviour:
   - {fileID: 1566116577}
   - {fileID: 415093704}
   player: {fileID: 534669902}
-  weighplate: {x: 24.4, y: -1.75, z: -8.3}
+  weighplate: {x: 24.4, y: -1.8, z: -8.3}
 --- !u!54 &300866389
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7137,7 +7137,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -51151,7 +51151,7 @@ PrefabInstance:
     - target: {fileID: 507089433298033615, guid: d3fc3b63a11eda3408cc5a38bc1645af,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -17.85
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 507089433298033615, guid: d3fc3b63a11eda3408cc5a38bc1645af,
         type: 3}
@@ -51161,7 +51161,7 @@ PrefabInstance:
     - target: {fileID: 507089433298033615, guid: d3fc3b63a11eda3408cc5a38bc1645af,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.82
+      value: -4.96
       objectReference: {fileID: 0}
     - target: {fileID: 507089433298033615, guid: d3fc3b63a11eda3408cc5a38bc1645af,
         type: 3}

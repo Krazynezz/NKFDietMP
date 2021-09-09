@@ -11,7 +11,7 @@ public class FinalWeigh : MonoBehaviour
     public GameObject connectdoor2;
     public GameObject[] root;
     public GameObject player;
-    static bool[] weighs = new bool[] { false,false,false };
+    static bool[] weighs = new bool[] { false, false, false };
     static int weighindex = 0;
     static int complete = 0;
     public Vector3 weighplate;
@@ -48,8 +48,8 @@ public class FinalWeigh : MonoBehaviour
     void Start()
     {
         off = new Vector3(0.4f, 0, 0);
-        
-        
+
+
     }
 
     // Update is called once per frame
@@ -62,18 +62,18 @@ public class FinalWeigh : MonoBehaviour
             num++;
         }
         foreach (var item in weighs)
-            {
+        {
             if (item == true)
-            {   
+            {
                 complete++;
-                
+
             }
             if (item == false)
             {
                 complete = 0;
             }
-            }
-        if (complete ==3)
+        }
+        if (complete == 3)
         {
             FindFruits();
             DestroyAllFinalWeighObjects();
@@ -89,15 +89,15 @@ public class FinalWeigh : MonoBehaviour
         if (other.tag == "interactable" && num2 < 2)
         {
             player.GetComponent<move>().interacted = false;
-            other.transform.position = weighplate + off *(num2-1);
+            other.transform.position = weighplate + off * (num2 - 1);
             other.transform.rotation = Quaternion.Euler(0, 0, 0);
             UnityEngine.Debug.Log(num2);
             num2++;
-            
+
         }
 
-        
-       
+
+
         foreach (var item in root)
         {
             if (other.gameObject == item)
@@ -106,12 +106,12 @@ public class FinalWeigh : MonoBehaviour
             }
 
         }
-   
+
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.tag == "interactable")
+        if (other.tag == "interactable")
         {
             foreach (var item in root)
             {
@@ -127,11 +127,11 @@ public class FinalWeigh : MonoBehaviour
 
         }
 
-        
-    }
-    
 
-        
+    }
+
+
+
 
     void DestroyAllFinalWeighObjects()
     {
@@ -196,5 +196,5 @@ public class FinalWeigh : MonoBehaviour
         Destroy(L2);
     }
 
-    
+
 }
