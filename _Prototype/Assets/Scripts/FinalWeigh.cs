@@ -42,6 +42,8 @@ public class FinalWeigh : MonoBehaviour
     private GameObject L1;
     private GameObject L2;
 
+    private GameObject FWS;
+
 
 
     // Start is called before the first frame update
@@ -173,6 +175,8 @@ public class FinalWeigh : MonoBehaviour
         BLB1 = GameObject.Find("Blueberry1");
         L1 = GameObject.Find("Lemon1");
         L2 = GameObject.Find("Lemon2");
+
+        FWS = GameObject.Find("FinalWeighSign");
         Destroy(A1);
         Destroy(A2);
         Destroy(S1);
@@ -194,6 +198,7 @@ public class FinalWeigh : MonoBehaviour
         Destroy(BLB1);
         Destroy(L1);
         Destroy(L2);
+        Destroy(FWS);
     }
 
 

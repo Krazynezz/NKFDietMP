@@ -32,7 +32,7 @@ Material:
     - _Alpha: 1
     - _Brightness: 3
     - _FlickerSpeed: 1
-    - _Fold: 1
+    - _Fold: 3
     - _GlitchIntensity: 0
     - _GlitchSpeed: 1
     - _GlowSpeed: 1
