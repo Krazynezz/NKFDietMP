@@ -27,7 +27,9 @@ public class move : MonoBehaviour
     public bool maze;
     public bool pipes;
     public GameObject teleporter;
-
+    public GameObject[] mazeshader = new GameObject[2];
+    public GameObject[] pipeshader = new GameObject[2];
+    public Material greenshader;
     // Start is called before the first frame update
     void Start()
         {
@@ -46,11 +48,25 @@ public class move : MonoBehaviour
         player.transform.position = new Vector3(transform.position.x,-1.1f,transform.position.z);
 
     }
- 
+
 
 
     void Update()
+    {
+        if (maze == true)
         {
+            foreach (var item in mazeshader)
+            {
+                item.GetComponent<Renderer>().material = greenshader;
+            }
+        }
+        if (pipes == true)
+        {
+            foreach (var item in pipeshader)
+            {
+                item.GetComponent<Renderer>().material = greenshader;
+            }
+        }
         if(maze == true && pipes == true)
         {
             teleporter.active = true;

@@ -36,38 +36,45 @@ public class straightpipe : MonoBehaviour
         {
             distance[i] = Vector3.Distance(other.transform.position, item.transform.position);
             i++;
-            Debug.Log("afre");
         }
     }
     private void OnTriggerStay(Collider other)
     {
-        if (Mathf.Min(distance) == distance[1])
+        this.tag = "Untagged";
+        if (Mathf.Min(distance) < 0.1f)
         {
+            if (Mathf.Min(distance) == distance[1])
             {
-                other.transform.position = Vector3.MoveTowards(other.transform.position, waypoints[head].position, 0.001f);
-                if (Vector3.Distance(other.transform.position, waypoints[head].position) < 0.001)
                 {
-                    head++;
-                }
-                if (head >= 6)
-                {
+                    other.transform.position = Vector3.MoveTowards(other.transform.position, waypoints[head].position, 0.001f);
+                    if (Vector3.Distance(other.transform.position, waypoints[head].position) < 0.001)
+                    {
+                        head++;
+                    }
+                    if (head >= 6)
+                    {
 
+                    }
+                }
+            }
+            if (Mathf.Min(distance) == distance[2])
+            {
+                other.transform.position = Vector3.MoveTowards(other.transform.position, waypoints[tail].position, 0.001f);
+                if (Vector3.Distance(other.transform.position, waypoints[tail].position) < 0.001)
+                {
+                    tail--;
                 }
             }
         }
-        if (Mathf.Min(distance) == distance[2])
+        else
         {
-            other.transform.position = Vector3.MoveTowards(other.transform.position, waypoints[tail].position, 0.001f);
-            if (Vector3.Distance(other.transform.position, waypoints[tail].position) < 0.001)
-            {
-                tail--;
-            }
+            Destroy(other.gameObject);
         }
     }
     private void OnTriggerExit(Collider other)
     {
         tail = 2;
         head = 1;
-
+        this.tag = "pipe";
     }
 }

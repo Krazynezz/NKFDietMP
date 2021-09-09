@@ -14,6 +14,7 @@ public class Gm : MonoBehaviour
     public GameObject spawningpipe;
     float spawned = 1;
     move refer;
+    public float pipetrue;
 
     // Start is called before the first frame update
     void Start()
@@ -44,7 +45,8 @@ public class Gm : MonoBehaviour
                     current.transform.RotateAround(hit.collider.bounds.center, Vector3.forward, 90);
                 }
         }
-        if (Input.GetButtonDown("Fire2"))
+        // if (Input.GetButtonDown("Fire2"))
+        if (pipetrue == 2)
         {
             SceneManager.UnloadScene("Pipes");
             Cursor.lockState = CursorLockMode.Locked;

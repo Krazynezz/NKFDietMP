@@ -41,6 +41,7 @@ void Update()
     }
     private void OnTriggerStay(Collider other)
     {
+        this.tag = "Untagged";
         if (Mathf.Min(distance) == distance[1])
         {
             {
@@ -63,11 +64,15 @@ void Update()
                 tail--;
             }         
         }
+        if(Mathf.Min(distance) == distance[2]|| Mathf.Min(distance) == distance[3])
+        {
+            Destroy(other.gameObject);
+        }
         }
     private void OnTriggerExit(Collider other)
     {
         tail = 4;
         head = 1;
-
+        this.tag = "pipe";
     }
 }
