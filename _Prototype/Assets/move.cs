@@ -27,7 +27,6 @@ public class move : MonoBehaviour
     public bool maze;
     public bool pipes;
     public GameObject teleporter;
-    Outline outline;
 
     // Start is called before the first frame update
     void Start()
@@ -72,7 +71,7 @@ public class move : MonoBehaviour
             {
                 if (objects.collider.tag == "interactable")
                 {
-                    origin =  objects.transform.position;
+                    origin =  objects.collider.gameObject.GetComponent<origin>().originpos;
                     originrot = objects.transform.rotation;
                     interacting = objects.collider.gameObject;
                     interacted = true;

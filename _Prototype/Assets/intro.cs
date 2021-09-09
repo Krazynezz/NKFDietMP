@@ -18,6 +18,7 @@ public class intro : MonoBehaviour
         {
             foreach (var item in GameObject.FindGameObjectsWithTag("interactable"))
             {
+                item.AddComponent<origin>();
                 outline = item.AddComponent<Outline>();
                 outline.OutlineMode = Outline.Mode.OutlineVisible;
                 outline.OutlineWidth = 10f;
