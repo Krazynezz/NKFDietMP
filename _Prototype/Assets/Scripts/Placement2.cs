@@ -11,8 +11,6 @@ public class Placement2 : MonoBehaviour
     RaycastHit hit;
     bool done = false;
     static public float correctItems;
-    [HideInInspector]
-    public bool doorOpen;
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +24,6 @@ public class Placement2 : MonoBehaviour
         if (correctItems == 3)
         {
             connectdoor.GetComponent<Animator>().SetBool("character_nearby",true);
-            doorOpen = true;
         }
     }
     private void OnTriggerEnter(Collider other)
