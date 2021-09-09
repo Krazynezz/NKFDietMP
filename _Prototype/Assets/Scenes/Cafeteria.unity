@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.46613818, g: 0.46583682, b: 0.4619301, a: 1}
+  m_IndirectSpecularColor: {r: 0.46613812, g: 0.46583676, b: 0.4619301, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -154,7 +154,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -251,7 +251,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36af0bfa96deb441a8ff7106b3ffa2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 584012}
+  entranceAudio: {fileID: 0}
+  doorAudio: {fileID: 0}
+  placement2: {fileID: 2064259864}
 --- !u!65 &584014
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8019,7 +8021,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -8116,7 +8118,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36af0bfa96deb441a8ff7106b3ffa2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 351126698}
+  entranceAudio: {fileID: 0}
+  doorAudio: {fileID: 0}
+  placement2: {fileID: 2064259864}
 --- !u!65 &351126700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8549,7 +8553,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -8646,7 +8650,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36af0bfa96deb441a8ff7106b3ffa2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 377510978}
+  entranceAudio: {fileID: 0}
+  doorAudio: {fileID: 0}
+  placement2: {fileID: 2064259864}
 --- !u!65 &377510980
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14626,6 +14632,7 @@ MonoBehaviour:
   Item: {fileID: 1917385533}
   player: {fileID: 534669902}
   connectdoor: {fileID: 1577785671}
+  done: 0
 --- !u!65 &612326420
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27876,6 +27883,7 @@ MonoBehaviour:
   Item: {fileID: 2883781494521131575}
   player: {fileID: 534669902}
   connectdoor: {fileID: 1577785671}
+  done: 0
 --- !u!65 &1155336632
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38002,6 +38010,102 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 230624133}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1577785676
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577785671}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e357505ec20796440a52913462562840, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1582375468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46902,7 +47006,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36af0bfa96deb441a8ff7106b3ffa2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1934582370}
+  entranceAudio: {fileID: 1934582370}
+  doorAudio: {fileID: 1577785676}
+  placement2: {fileID: 2064259864}
 --- !u!65 &1934582372
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49912,6 +50018,7 @@ MonoBehaviour:
   Item: {fileID: 6230852148713295776}
   player: {fileID: 534669902}
   connectdoor: {fileID: 1577785671}
+  done: 0
 --- !u!65 &2064259865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51722,7 +51829,7 @@ PrefabInstance:
     - target: {fileID: 507089433298033615, guid: d3fc3b63a11eda3408cc5a38bc1645af,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 30
+      value: -18.86
       objectReference: {fileID: 0}
     - target: {fileID: 507089433298033615, guid: d3fc3b63a11eda3408cc5a38bc1645af,
         type: 3}
@@ -51732,7 +51839,7 @@ PrefabInstance:
     - target: {fileID: 507089433298033615, guid: d3fc3b63a11eda3408cc5a38bc1645af,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.6
+      value: -6.78
       objectReference: {fileID: 0}
     - target: {fileID: 507089433298033615, guid: d3fc3b63a11eda3408cc5a38bc1645af,
         type: 3}
