@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class teleport : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class teleport : MonoBehaviour
     bool triggered2 = false;
     public GameObject endscreen;
     float delay;
+    float fading;
+    Color tempcolor;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +40,11 @@ public class teleport : MonoBehaviour
         }
         if (delay >= 1)
         {
+            tempcolor = endscreen.GetComponentInChildren<Image>().color;
+            tempcolor.a = fading;
+            endscreen.GetComponentInChildren<Image>().color = tempcolor;
             endscreen.active = true;
+            fading += 0.001f;
         }
     }
     private void OnTriggerEnter(Collider other)
