@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8210869153631717942}
   - component: {fileID: 4459521992980483034}
   - component: {fileID: 5843223467448210115}
+  - component: {fileID: -4047603242405432468}
   m_Layer: 0
   m_Name: Mineral_Water
   m_TagString: interactable
@@ -144,3 +145,16 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &-4047603242405432468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8210869153631717940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a541487623704d9b7e19839bb22a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originpos: {x: 0, y: 0, z: 0}

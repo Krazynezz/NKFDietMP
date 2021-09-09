@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fb00987cd77c134a826cc0a94cf6ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  divisionright: 0
+  divisionright: 1
   player: {fileID: 507089433298033616, guid: d3fc3b63a11eda3408cc5a38bc1645af, type: 3}
   door: {fileID: 115324, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
 --- !u!1 &5065304757993658372
