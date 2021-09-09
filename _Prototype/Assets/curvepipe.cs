@@ -47,7 +47,6 @@ void Update()
                 other.transform.position = Vector3.MoveTowards(other.transform.position, waypoints[head].position, 0.001f);
                 if (Vector3.Distance(other.transform.position, waypoints[head].position) < 0.001)
                 {
-                    Debug.Log(head);
                     head++;
                 }
                 if(head >=6)
@@ -61,7 +60,6 @@ void Update()
             other.transform.position = Vector3.MoveTowards(other.transform.position, waypoints[tail].position, 0.001f);
             if (Vector3.Distance(other.transform.position, waypoints[tail].position) < 0.001)
             {
-                Debug.Log(tail);
                 tail--;
             }         
         }

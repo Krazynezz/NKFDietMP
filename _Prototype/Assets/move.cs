@@ -63,8 +63,11 @@ public class move : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out objects, 1))
             {
-            crosshair.active = false;
-            crosshand.active = true;
+            if (objects.collider.tag == "interactable")
+            {
+                crosshair.active = false;
+                crosshand.active = true;
+            }
             if (Input.GetButtonDown("Fire1") && interacted == false)
             {
                 if (objects.collider.tag == "interactable")
