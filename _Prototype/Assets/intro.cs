@@ -14,7 +14,7 @@ public class intro : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (outline == false)
+        if (outlined == false)
         {
             foreach (var item in GameObject.FindGameObjectsWithTag("interactable"))
             {
