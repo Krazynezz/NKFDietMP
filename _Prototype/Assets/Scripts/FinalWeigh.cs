@@ -11,7 +11,7 @@ public class FinalWeigh : MonoBehaviour
     public GameObject connectdoor2;
     public GameObject[] root;
     public GameObject player;
-    static bool[] weighs = new bool[] { false, false, false };
+    static bool[] weighs = new bool[] { false, false};
     static int weighindex = 0;
     static int complete = 0;
     public Vector3 weighplate;
@@ -22,8 +22,8 @@ public class FinalWeigh : MonoBehaviour
     GameObject[] weighObjects;
     private GameObject A1;
     private GameObject A2;
-    private GameObject S1;
-    private GameObject S2;
+    private GameObject FL1;
+    private GameObject FL2;
     private GameObject B1;
     private GameObject B2;
 
@@ -75,7 +75,7 @@ public class FinalWeigh : MonoBehaviour
                 complete = 0;
             }
         }
-        if (complete == 3)
+        if (complete == 2)
         {
             FindFruits();
             DestroyAllFinalWeighObjects();
@@ -93,7 +93,7 @@ public class FinalWeigh : MonoBehaviour
             player.GetComponent<move>().interacted = false;
             other.transform.position = weighplate + off * (num2 - 1);
             other.transform.rotation = Quaternion.Euler(0, 0, 0);
-            UnityEngine.Debug.Log(num2);
+            UnityEngine.Debug.Log(num);
             num2++;
 
         }
@@ -156,8 +156,8 @@ public class FinalWeigh : MonoBehaviour
     {
         A1 = GameObject.Find("FinalApple1");
         A2 = GameObject.Find("FinalApple2");
-        S1 = GameObject.Find("FinalStrawberry1");
-        S2 = GameObject.Find("FinalStrawberry2");
+        FL1 = GameObject.Find("FinalLemon1");
+        FL2 = GameObject.Find("FinalLemon2");
         B1 = GameObject.Find("FinalBlueberry2");
         B2 = GameObject.Find("FinalBlueberry2");
 
@@ -179,8 +179,8 @@ public class FinalWeigh : MonoBehaviour
         FWS = GameObject.Find("FinalWeighSign");
         Destroy(A1);
         Destroy(A2);
-        Destroy(S1);
-        Destroy(S2);
+        Destroy(FL1);
+        Destroy(FL2);
         Destroy(B1);
         Destroy(B2);
 
