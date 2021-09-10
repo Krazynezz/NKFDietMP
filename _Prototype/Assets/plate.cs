@@ -15,6 +15,7 @@ public class plate : MonoBehaviour
     {
         origin = transform.position;
         door = GameObject.Find("Cafeteria_Exit");
+        player = Camera.main.gameObject;
     }
 
     // Update is called once per frame
@@ -46,7 +47,6 @@ public class plate : MonoBehaviour
                     door.GetComponent<Animator>().SetBool("character_nearby", true);
                 }
                 player.GetComponent<move>().interacted = false;
-                player.GetComponent<move>().interacting = null;
                 Destroy(this.gameObject);
 
             }
