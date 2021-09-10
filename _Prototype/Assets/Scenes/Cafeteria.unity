@@ -9751,7 +9751,7 @@ GameObject:
   - component: {fileID: 425480001}
   - component: {fileID: 425480002}
   m_Layer: 0
-  m_Name: Holder3
+  m_Name: PlateThree
   m_TagString: interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9834,7 +9834,7 @@ Transform:
   m_Children:
   - {fileID: 6645823806208906492}
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &425480001
 MonoBehaviour:
@@ -42862,7 +42862,7 @@ GameObject:
   - component: {fileID: 1811664491}
   - component: {fileID: 1811664492}
   m_Layer: 0
-  m_Name: Holder1
+  m_Name: PlateTwo
   m_TagString: interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42945,7 +42945,7 @@ Transform:
   m_Children:
   - {fileID: 6645823805798588328}
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1811664491
 MonoBehaviour:
@@ -47511,7 +47511,7 @@ GameObject:
   - component: {fileID: 1959573093}
   - component: {fileID: 1959573094}
   m_Layer: 0
-  m_Name: Holder2
+  m_Name: PlateOne
   m_TagString: interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
