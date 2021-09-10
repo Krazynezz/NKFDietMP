@@ -85,6 +85,10 @@ public class move : MonoBehaviour
             }
             if (Input.GetButtonDown("Fire1") && interacted == false)
             {
+                if (objects.collider.gameObject.GetComponent<AudioSource>() != null)
+                {
+                    objects.collider.gameObject.GetComponent<AudioSource>().Play();
+                }
                 if (objects.collider.tag == "interactable")
                 {
                     origin =  objects.collider.gameObject.GetComponent<origin>().originpos;

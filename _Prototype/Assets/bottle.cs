@@ -5,6 +5,7 @@ using UnityEngine;
 public class bottle : MonoBehaviour
 {
     public GameObject player;
+    public GameObject door;
     public static bool hydate = false;
 
     // Start is called before the first frame update
@@ -27,7 +28,7 @@ public class bottle : MonoBehaviour
             hydate = true;
             if (plate.eaten == true)
             {
-                //plate.GetComponent<Animator>().SetBool("character_nearby", true);
+                door.GetComponent<Animator>().SetBool("character_nearby", true);
             }
         }
 

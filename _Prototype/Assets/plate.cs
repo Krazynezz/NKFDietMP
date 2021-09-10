@@ -43,7 +43,8 @@ public class plate : MonoBehaviour
                 if (bottle.hydate == true)
                 {
                     door.GetComponent<Animator>().SetBool("character_nearby", true);
-                }    
+                }
+                player.GetComponent<move>().interacted = false;
                 Destroy(this.gameObject);
 
             }
