@@ -12,6 +12,7 @@ public class bottle : MonoBehaviour
     void Start()
     {
         player = Camera.main.gameObject;
+        door = GameObject.Find("Cafeteria_Exit");
     }
 
     // Update is called once per frame
