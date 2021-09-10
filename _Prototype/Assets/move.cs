@@ -12,7 +12,7 @@ public class move : MonoBehaviour
     public GameObject redcan;
     public GameObject container;
     RaycastHit objects;
-        GameObject interacting;
+        public GameObject interacting;
         public bool interacted = false;
         Vector3 movement;
         Vector3 front;
