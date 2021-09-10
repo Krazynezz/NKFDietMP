@@ -44,7 +44,7 @@ public class plate : MonoBehaviour
                 {
                     door.GetComponent<Animator>().SetBool("character_nearby", true);
                 }
-                player.GetComponent<move>().interacted = false;
+                player.GetComponent<move>().interacting = null;
                 Destroy(this.gameObject);
 
             }
