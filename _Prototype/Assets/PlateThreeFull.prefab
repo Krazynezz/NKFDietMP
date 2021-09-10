@@ -765,6 +765,7 @@ GameObject:
   - component: {fileID: 5853456319510948376}
   - component: {fileID: 5853456319510948377}
   - component: {fileID: 5853456319510948378}
+  - component: {fileID: -2960665173291573610}
   m_Layer: 0
   m_Name: PlateThreeFull
   m_TagString: interactable
@@ -840,6 +841,19 @@ MonoBehaviour:
   divisionright: 1
   player: {fileID: 507089433298033616, guid: d3fc3b63a11eda3408cc5a38bc1645af, type: 3}
   door: {fileID: 115324, guid: 820591594dcfa124d8a9c5d016d6c22c, type: 3}
+--- !u!114 &-2960665173291573610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5853456319510948388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b5a541487623704d9b7e19839bb22a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originpos: {x: 0, y: 0, z: 0}
 --- !u!1001 &5853456318654294767
 PrefabInstance:
   m_ObjectHideFlags: 0
