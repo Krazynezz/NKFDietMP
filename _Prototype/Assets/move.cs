@@ -154,8 +154,8 @@ public class move : MonoBehaviour
                 interacting = null;
                 interacted = false;
             }
-            
-                if (interacted)
+
+        if (interacted)
             {
                 interacting.transform.position = this.transform.position + transform.forward - transform.up/10;
                 interacting.transform.rotation = this.transform.rotation * Quaternion.Euler(-10,0,0);
