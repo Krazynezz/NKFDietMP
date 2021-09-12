@@ -14,7 +14,7 @@ public class intro : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (outlined == false)
+      /*  if (outlined == false)
         {
             foreach (var item in GameObject.FindGameObjectsWithTag("interactable"))
             {
@@ -24,7 +24,7 @@ public class intro : MonoBehaviour
                 outline.OutlineWidth = 10f;
             }
             outlined = true;
-        }
+        }*/
     }
 
     // Update is called once per frame
