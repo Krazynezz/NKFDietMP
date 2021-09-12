@@ -69,7 +69,7 @@ public class move : MonoBehaviour
         }
         if(maze == true && pipes == true)
         {
-            teleporter.active = true;
+            teleporter.SetActive(true);
         }
 
         transform.eulerAngles += new Vector3(Input.GetAxis("Mouse Y") * -1, Input.GetAxis("Mouse X"), 0);
@@ -80,8 +80,8 @@ public class move : MonoBehaviour
             {
             if (objects.collider.tag == "interactable")
             {
-                crosshair.active = false;
-                crosshand.active = true;
+                crosshair.SetActive(false);
+                crosshand.SetActive(true);
             }
             if (Input.GetButtonDown("Fire1") && interacted == false)
             {
@@ -100,14 +100,14 @@ public class move : MonoBehaviour
                 {
                     Cursor.lockState = CursorLockMode.None;
                     SceneManager.LoadScene("Pipes", LoadSceneMode.Additive);
-                    crosshair.active = false;
+                    crosshair.SetActive(false);
 
 
                 }
                 if (objects.collider.tag == "peritonial" && !SceneManager.GetSceneByName("Maze").isLoaded)
                 {
                     SceneManager.LoadScene("Maze", LoadSceneMode.Additive);
-                    crosshair.active = false;
+                    crosshair.SetActive(false);
 
                 }
                 if (objects.collider.tag == "button")
@@ -144,8 +144,8 @@ public class move : MonoBehaviour
             }
        else
         {
-            crosshair.active = true;
-            crosshand.active =false;
+            crosshair.SetActive(true);
+            crosshand.SetActive(false);
         }
             if (Input.GetButtonDown("Fire2") && interacting != null)
             {

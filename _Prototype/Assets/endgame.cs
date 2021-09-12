@@ -17,7 +17,7 @@ public class endgame : MonoBehaviour
     {
         if (Input.anyKey)
         {
-            this.gameObject.active = false;
+            this.gameObject.SetActive(false);
             Cursor.lockState = CursorLockMode.None;
             SceneManager.LoadScene("Start_Screen",LoadSceneMode.Single);
         }

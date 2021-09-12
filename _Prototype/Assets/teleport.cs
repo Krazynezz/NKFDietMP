@@ -43,7 +43,7 @@ public class teleport : MonoBehaviour
             tempcolor = endscreen.GetComponentInChildren<Image>().color;
             tempcolor.a = fading;
             endscreen.GetComponentInChildren<Image>().color = tempcolor;
-            endscreen.active = true;
+            endscreen.SetActive(true);
             fading += 0.001f;
         }
     }

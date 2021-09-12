@@ -17,7 +17,7 @@ public class NoDestroy : MonoBehaviour
         }
         else
         {
-            DestroyObject(gameObject);
+            Object.Destroy(this);
         }
     }
 }

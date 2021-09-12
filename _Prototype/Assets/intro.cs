@@ -24,6 +24,8 @@ public class intro : MonoBehaviour
                 outline.OutlineWidth = 10f;
             }
             outlined = true;
+            Resources.UnloadUnusedAssets();
+            System.GC.Collect();
         }
     }
 
@@ -35,16 +37,16 @@ public class intro : MonoBehaviour
         {
             if (Input.anyKey)
             {
-                this.gameObject.active = false;
+                this.gameObject.SetActive(false);
 
                 if (lastintro == true)
                 {
                     player.GetComponent<move>().enabled = true;
-                    crosshair.active = true;
+                    crosshair.SetActive(true);
                 }
                 else
                 {
-                    nextintro.active = true;
+                    nextintro.SetActive(true);
                 }
             }
         }   

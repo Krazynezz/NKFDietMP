@@ -26,7 +26,7 @@ public class peritonial : MonoBehaviour
         this.gameObject.GetComponent<Rigidbody>().position += new Vector3(Input.GetAxis("Horizontal") / 100, 0, 0);
         if(Input.GetButton("Fire2"))
         {
-            refer.crosshair.active = true;
+            refer.crosshair.SetActive(true);
             refer.enabled = true;
             refer.maze = true; ;
             SceneManager.UnloadSceneAsync("Maze");
@@ -54,7 +54,7 @@ public class peritonial : MonoBehaviour
     {
         if (collision.gameObject.tag == "end")
         {
-            refer.crosshair.active = true;
+            refer.crosshair.SetActive(true);
             refer.enabled = true;
             refer.maze = true; ;
             SceneManager.UnloadSceneAsync("Maze");
