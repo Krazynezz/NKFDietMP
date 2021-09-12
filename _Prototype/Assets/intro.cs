@@ -14,14 +14,14 @@ public class intro : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        outline.OutlineMode = Outline.Mode.OutlineVisible;
+        outline.OutlineWidth = 10f;
         if (outlined == false)
         {
             foreach (var item in GameObject.FindGameObjectsWithTag("interactable"))
             {
                 item.AddComponent<origin>();
                 outline = item.AddComponent<Outline>();
-                outline.OutlineMode = Outline.Mode.OutlineVisible;
-                outline.OutlineWidth = 10f;
             }
             outlined = true;
         }
