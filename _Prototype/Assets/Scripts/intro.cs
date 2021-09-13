@@ -24,8 +24,6 @@ public class intro : MonoBehaviour
                 outline.OutlineWidth = 10f;
             }
             outlined = true;
-            Resources.UnloadUnusedAssets();
-            System.GC.Collect();
         }
     }
 
