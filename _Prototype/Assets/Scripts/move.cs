@@ -147,7 +147,7 @@ public class move : MonoBehaviour
             crosshair.SetActive(true);
             crosshand.SetActive(false);
         }
-            if (Input.GetButtonDown("Fire2") && interacting != null)
+            if (Input.GetButtonDown("Fire2") && interacted != false)
             {
                 interacting.transform.position = origin;
                 interacting.transform.rotation = originrot;

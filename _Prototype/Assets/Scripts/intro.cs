@@ -12,7 +12,7 @@ public class intro : MonoBehaviour
     Outline outline;
     static bool outlined;
     // Start is called before the first frame update
-    void Awake  ()
+    void Awake()
     {
         if (outlined == false)
         {
