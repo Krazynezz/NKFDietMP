@@ -31,7 +31,7 @@ public class teleport : MonoBehaviour
         }
         if (endingeffect.activeInHierarchy == false && triggered2 == false)
         {
-            Instantiate(kidneys, this.transform, true);
+            Instantiate(kidneys, endingeffect.transform.position,Quaternion.identity);
             triggered2 = true;
         }
         if (triggered2 == true)
