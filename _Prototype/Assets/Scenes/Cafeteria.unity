@@ -9243,6 +9243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fb00987cd77c134a826cc0a94cf6ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  replicator: {fileID: 1986546814}
   divisionright: 1
   player: {fileID: 534669902}
   door: {fileID: 1025117889}
@@ -41727,6 +41728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fb00987cd77c134a826cc0a94cf6ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  replicator: {fileID: 1986546814}
   divisionright: 0
   player: {fileID: 534669902}
   door: {fileID: 1025117889}
@@ -46237,6 +46239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fb00987cd77c134a826cc0a94cf6ecc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  replicator: {fileID: 1986546814}
   divisionright: 0
   player: {fileID: 534669902}
   door: {fileID: 1025117889}
@@ -50205,7 +50208,7 @@ PrefabInstance:
     - target: {fileID: 507089433298033615, guid: d3fc3b63a11eda3408cc5a38bc1645af,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -49.1
+      value: 21.3
       objectReference: {fileID: 0}
     - target: {fileID: 507089433298033615, guid: d3fc3b63a11eda3408cc5a38bc1645af,
         type: 3}
@@ -50215,7 +50218,7 @@ PrefabInstance:
     - target: {fileID: 507089433298033615, guid: d3fc3b63a11eda3408cc5a38bc1645af,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -35.9
+      value: -26.2
       objectReference: {fileID: 0}
     - target: {fileID: 507089433298033615, guid: d3fc3b63a11eda3408cc5a38bc1645af,
         type: 3}

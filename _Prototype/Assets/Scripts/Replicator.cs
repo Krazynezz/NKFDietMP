@@ -30,17 +30,14 @@ public class Replicator : MonoBehaviour
                 if(other.name == "PlateOne")
                 {
                     Instantiate(plateOneFull, outPutPos.position, outPutPos.rotation);
-                    //Destroy(other.gameObject);
                 }
                 else if (other.name == "PlateTwo")
                 {
                     Instantiate(plateTwoFull, outPutPos.position, outPutPos.rotation);
-                    //Destroy(other.gameObject);
                 }
                 else if (other.name == "PlateThree")
                 {
                     Instantiate(plateThreeFull, outPutPos.position, outPutPos.rotation);
-                    //Destroy(other.gameObject);
                 }
                 Destroy(other.gameObject);
                 replicatable = false;
