@@ -30,4 +30,11 @@ public class canister : MonoBehaviour
             cancount += 1;
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "replicator")
+        {
+            cancount--;
+        }
+    }
 }
