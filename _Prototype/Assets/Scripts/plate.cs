@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class plate : MonoBehaviour
 {
+    public Replicator replicator;
     Vector3 origin;
     public bool divisionright = false;
     public GameObject player;
@@ -26,7 +27,7 @@ public class plate : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "replicator")
+        if (other.tag == "replicator" && replicator.platePlaced == false)
         {
             player.GetComponent<move>().interacted = false;
             this.gameObject.transform.position = other.transform.position;
