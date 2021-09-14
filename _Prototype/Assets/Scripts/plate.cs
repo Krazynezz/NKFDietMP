@@ -7,7 +7,7 @@ public class plate : MonoBehaviour
     public Replicator replicator;
     Vector3 origin;
     public bool divisionright = false;
-    public GameObject player;
+    GameObject player;
     public GameObject door;
     public static bool eaten = false;
 
