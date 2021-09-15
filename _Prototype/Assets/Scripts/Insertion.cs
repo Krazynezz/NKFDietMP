@@ -6,6 +6,4 @@ using UnityEngine;
     public class Insertion : ScriptableObject
 {
         public GameObject[] interactables;
-    //            insertion.interactables = GameObject.FindGameObjectsWithTag("interactable");
-
 }
