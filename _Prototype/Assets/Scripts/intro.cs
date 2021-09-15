@@ -16,7 +16,8 @@ public class intro : MonoBehaviour
     void Awake()
     {
             if (outlined == false)
-        {        
+        {
+            insertion.interactables = GameObject.FindGameObjectsWithTag("interactables");
             foreach (var item in insertion.interactables)
             {
                 item.AddComponent<origin>();
