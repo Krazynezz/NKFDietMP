@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class intro : MonoBehaviour
@@ -16,8 +17,9 @@ public class intro : MonoBehaviour
     void Awake()
     {
             if (outlined == false)
-        {
-            foreach (var item in insertion.interactables)
+        {    //insertion.interactables = GameObject.FindGameObjectsWithTag("interactable");
+            //EditorUtility.SetDirty(insertion);
+                foreach (var item in insertion.interactables)
             {
                 item.AddComponent<origin>();
                 outline = item.AddComponent<Outline>();
