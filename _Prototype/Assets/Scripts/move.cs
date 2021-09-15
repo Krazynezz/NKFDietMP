@@ -87,7 +87,9 @@ public class move : MonoBehaviour
             {
                 if (objects.collider.gameObject.GetComponent<AudioSource>() != null)
                 {
-                    objects.collider.gameObject.GetComponent<AudioSource>().Play();
+                    this.gameObject.GetComponent<AudioSource>().clip = objects.collider.gameObject.GetComponent<AudioSource>().clip;
+                    this.gameObject.GetComponent<AudioSource>().Play();
+                    objects.collider.gameObject.GetComponent<AudioSource>().clip = null;
                 }
                 if (objects.collider.tag == "interactable")
                 {

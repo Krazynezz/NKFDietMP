@@ -4,30 +4,14 @@ using UnityEngine;
 
 public class audioManager : MonoBehaviour
 {
-    public AudioSource entranceAudio;
-    //public AudioSource doorAudio;
-    //public Placement2 placement2;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "MainCamera" && !entranceAudio.isPlaying)
+        if (other.tag == "MainCamera" && this.gameObject.GetComponent<AudioSource>().clip != null)
         {
-            entranceAudio.Play();
+            other.GetComponent<AudioSource>().clip = this.gameObject.GetComponent<AudioSource>().clip;
+            other.GetComponent<AudioSource>().Play();
+            this.gameObject.GetComponent<AudioSource>().clip = null;
         }
     }
-
-   /*
-    void Update()
-    {
-        if (placement2.done == true)
-        {
-            doorAudio.Play();
-        }
-    }
-
-    void playDoorSound2()
-    {
-        doorAudio.Play();
-    }
-   */
 }
