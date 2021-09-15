@@ -17,7 +17,6 @@ public class intro : MonoBehaviour
     {
             if (outlined == false)
         {
-            insertion.interactables = GameObject.FindGameObjectsWithTag("interactable");
             foreach (var item in insertion.interactables)
             {
                 item.AddComponent<origin>();
