@@ -13,11 +13,27 @@ public class Replicator : MonoBehaviour
     [HideInInspector]
     public bool replicatable = false;
 
-    public Transform outPutPos;
+    public Transform outPutPos1;
+    public Transform outPutPos2;
+    public Transform outPutPos3;
 
     public Rigidbody plateOneFull;
     public Rigidbody plateTwoFull;
     public Rigidbody plateThreeFull;
+
+    //string placedPlate;
+
+    /*
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.name == "PlateOne" || other.name == "PlateTwo" || other.name == "PlateThree")
+        {
+            platePlaced = true;
+            Debug.Log("Plate placed: " + other.gameObject.name);
+            //other.gameObject.name = placedPlate;
+        }
+    }
+    */
 
     private void OnTriggerStay(Collider other)
     {
@@ -29,21 +45,42 @@ public class Replicator : MonoBehaviour
             {
                 if(other.name == "PlateOne")
                 {
-                    Instantiate(plateOneFull, outPutPos.position, outPutPos.rotation);
+                    Instantiate(plateOneFull, outPutPos1.position, outPutPos1.rotation);
                 }
                 else if (other.name == "PlateTwo")
                 {
-                    Instantiate(plateTwoFull, outPutPos.position, outPutPos.rotation);
+                    Instantiate(plateTwoFull, outPutPos2.position, outPutPos2.rotation);
                 }
                 else if (other.name == "PlateThree")
                 {
-                    Instantiate(plateThreeFull, outPutPos.position, outPutPos.rotation);
+                    Instantiate(plateThreeFull, outPutPos3.position, outPutPos3.rotation);
                 }
                 Destroy(other.gameObject);
                 replicatable = false;
                 platePlaced = false;
             }
         }
+
+        /*
+        if (other.gameObject.name == placedPlate && replicatable == true)
+        {
+            if (other.name == "PlateOne")
+            {
+                Instantiate(plateOneFull, outPutPos.position, outPutPos.rotation);
+            }
+            else if (other.name == "PlateTwo")
+            {
+                Instantiate(plateTwoFull, outPutPos.position, outPutPos.rotation);
+            }
+            else if (other.name == "PlateThree")
+            {
+                Instantiate(plateThreeFull, outPutPos.position, outPutPos.rotation);
+            }
+            Destroy(other.gameObject);
+            replicatable = false;
+            platePlaced = false;
+        }
+        */
     }
 
     private void OnTriggerExit(Collider other)
