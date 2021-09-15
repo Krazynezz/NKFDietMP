@@ -11,12 +11,13 @@ public class intro : MonoBehaviour
     float delay;
     Outline outline;
     static bool outlined;
+    public Insertion insertion;
     // Start is called before the first frame update
     void Awake()
     {
-        if (outlined == false)
-        {
-            foreach (var item in GameObject.FindGameObjectsWithTag("interactable"))
+            if (outlined == false)
+        {        
+            foreach (var item in insertion.interactables)
             {
                 item.AddComponent<origin>();
                 outline = item.AddComponent<Outline>();
