@@ -18,7 +18,7 @@ public class intro : MonoBehaviour
     {
             if (outlined == false)
         {    
-/*            insertion.interactables = GameObject.FindGameObjectsWithTag("interactable");
+            insertion.interactables = GameObject.FindGameObjectsWithTag("interactable");
             EditorUtility.SetDirty(insertion);
                 foreach (var item in insertion.interactables)
             {
@@ -27,7 +27,7 @@ public class intro : MonoBehaviour
                 outline.OutlineMode = Outline.Mode.OutlineVisible;
                 outline.OutlineWidth = 10f;
             }
-            outlined = true;*/
+            outlined = true;
         }
     }
 
