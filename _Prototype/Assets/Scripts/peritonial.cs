@@ -5,13 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class peritonial : MonoBehaviour
 {
-    Vector3 prev;
     RaycastHit hit;
     move refer;
     // Start is called before the first frame update
     void Start()
     {
-        prev = this.transform.position;
         foreach (var item in GameObject.FindGameObjectsWithTag("MainCamera"))
         {
             if (item.GetComponent<move>())
