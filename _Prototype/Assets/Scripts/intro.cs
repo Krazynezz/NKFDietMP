@@ -14,7 +14,7 @@ public class intro : MonoBehaviour
     static bool outlined;
     public Insertion insertion;
     // Start is called before the first frame update
-    void Awake()
+/*    void Awake()
     {
             if (outlined == false)
         {    
@@ -29,7 +29,7 @@ public class intro : MonoBehaviour
             }   
             outlined = true;
         }
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
