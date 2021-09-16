@@ -9,7 +9,6 @@ public class ReplicatorButton : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log(canister.cancount);
-        //Debug.Log("Button Clicked");
         if (canister.cancount >= 2 && replicator.platePlaced == true)
         {
             replicator.replicatable = true;
@@ -19,12 +18,5 @@ public class ReplicatorButton : MonoBehaviour
         {
             Debug.Log("Something is missing");
         }
-        //Debug.Log(replicator.platePlaced);
     }
-
-    /*
-    private void OnMouseUp()
-    {
-        replicator.replicatable = false;
-    }*/
 }

@@ -24,9 +24,6 @@ public class Placement2 : MonoBehaviour
         if (correctItems == 3)
         {
             connectdoor.GetComponent<Animator>().SetBool("character_nearby",true);
-            //Debug.Log(done);
-            //done = true;
-            //correctItems += 1;
         }
     }
     private void OnTriggerEnter(Collider other)
