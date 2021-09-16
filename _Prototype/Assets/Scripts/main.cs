@@ -5,19 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class main : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void nextscene()
     {
-        SceneManager.LoadScene("Cafeteria", LoadSceneMode.Single);
+        SceneManager.LoadScene("Cafeteria", LoadSceneMode.Single);              //when start is clicked this funtion should be called by the button to enter the main scene
     }
 }

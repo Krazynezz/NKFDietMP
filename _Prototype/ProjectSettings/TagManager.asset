@@ -16,6 +16,7 @@ TagManager:
   - FWFruit
   - FinalWeigh
   - Placement
+  - BGM
   layers:
   - Default
   - TransparentFX

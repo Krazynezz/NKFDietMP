@@ -13,6 +13,6 @@ public class flowing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        this.gameObject.transform.position -= transform.right / 3000;
+        this.gameObject.transform.position -= transform.right / 3000;       //the spheres will move to towards the pipes when they spawn
     }
 }

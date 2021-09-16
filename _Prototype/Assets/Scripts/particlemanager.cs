@@ -17,6 +17,6 @@ public class particlemanager : MonoBehaviour
     }
     public void playparticle()
     {
-        particleSystem.Play();
+        particleSystem.Play();      //funtion to be called by the teleporter cylinder to start the particle effect
     }
 }
