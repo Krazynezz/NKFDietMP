@@ -9,13 +9,14 @@ public class endgame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>().clip = endsound;
+        GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>().clip = endsound;            //when the object becomes active the background music should change to ending music
+        GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>().Play();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.anyKey)
+        if (Input.anyKey)               //to escape back to start screen
         {
             this.gameObject.SetActive(false);
             Cursor.lockState = CursorLockMode.None;

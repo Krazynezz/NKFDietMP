@@ -23,6 +23,11 @@ public class Placement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (canned == 5)
+        {
+            Instantiate(Waterbottle, container.transform.position, Quaternion.identity);
+            canned += 1;
+        }
     }
     private void OnTriggerEnter(Collider item)
     {
@@ -37,14 +42,10 @@ public class Placement : MonoBehaviour
             if (item.name == correct)
             {
                 canned += 1;
-            }  }
-            
-        
-        if (canned == 5)
-        {
-            Instantiate(Waterbottle,container.transform.position,Quaternion.identity);
-            canned += 1;
+            } 
         }
+            
+
     }
     private void OnTriggerExit(Collider item)
     {

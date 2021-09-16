@@ -9,6 +9,7 @@ public class NoDestroy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         DontDestroyOnLoad(this.gameObject); // This will prevent the music object from being destroyed upon loading into another scene
 
         if (gameInstance == null) // This will prevent the BGM from playing twice upon loading back to the start menu screen
