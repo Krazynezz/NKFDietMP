@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.24379465, g: 0.24972966, b: 0.2520999, a: 1}
+  m_IndirectSpecularColor: {r: 0.46613812, g: 0.46583676, b: 0.4619301, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -46434,7 +46434,6 @@ GameObject:
   - component: {fileID: 1934582367}
   - component: {fileID: 1934582366}
   - component: {fileID: 1934582372}
-  - component: {fileID: 1934582371}
   m_Layer: 0
   m_Name: Start_Hologram
   m_TagString: Untagged
@@ -46520,18 +46519,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
---- !u!114 &1934582371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934582365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c36af0bfa96deb441a8ff7106b3ffa2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &1934582372
 BoxCollider:
   m_ObjectHideFlags: 0
