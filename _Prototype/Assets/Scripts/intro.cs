@@ -20,13 +20,13 @@ public class intro : MonoBehaviour
         {    
             insertion.interactables = GameObject.FindGameObjectsWithTag("interactable");
             EditorUtility.SetDirty(insertion);
-                foreach (var item in insertion.interactables)
+                foreach (GameObject item in insertion.interactables)
             {
                 item.AddComponent<origin>();
                 outline = item.AddComponent<Outline>();
                 outline.OutlineMode = Outline.Mode.OutlineVisible;
                 outline.OutlineWidth = 10f;
-            }
+            }   
             outlined = true;
         }
     }
