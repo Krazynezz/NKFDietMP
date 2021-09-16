@@ -18,7 +18,10 @@ public class canister : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+                    if (cancount >= 0)
+            {
+                this.gameObject.GetComponent<AudioSource>().clip = null;
+            }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -28,10 +31,7 @@ public class canister : MonoBehaviour
             this.gameObject.transform.position = end;
             this.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
             cancount += 1;
-            if (cancount >= 0)
-            {
-                this.gameObject.GetComponent<AudioSource>().clip = null;
-            }
+
         }
     }
     private void OnTriggerExit(Collider other)
