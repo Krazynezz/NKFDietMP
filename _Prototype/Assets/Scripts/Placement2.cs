@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Placement2 : MonoBehaviour
 {
-    public Vector3 lockpos;
     public GameObject Item;
     public GameObject player;
     public GameObject connectdoor;
