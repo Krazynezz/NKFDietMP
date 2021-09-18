@@ -83,7 +83,7 @@ public class move : MonoBehaviour
             }
             if (Input.GetButtonDown("Fire1") && interacted == false)            //if the player clicks and is not already holding an object
             {
-                if (objects.collider.gameObject.GetComponent<AudioSource>().clip != null)            //if the object has audio source component attached and audio clip
+                if (objects.collider.gameObject.GetComponent<AudioSource>() != null)            //if the object has audio source component attached and audio clip
                 {
                     this.gameObject.GetComponent<AudioSource>().clip = objects.collider.gameObject.GetComponent<AudioSource>().clip;            //the player audio source will play its clip
                     this.gameObject.GetComponent<AudioSource>().Play();
