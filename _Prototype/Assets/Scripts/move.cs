@@ -51,7 +51,7 @@ public class move : MonoBehaviour
 
     void Update()
     {
-        if (maze == true)           //if the maze has been cleared
+      /*  if (maze == true)           //if the maze has been cleared
         {
             foreach (var item in mazeshader)        //the two components of the patient hologram
             {
@@ -68,7 +68,7 @@ public class move : MonoBehaviour
         if(maze == true && pipes == true)           //if both conditions have been cleared
         {
             teleporter.SetActive(true);         //the teleporter will appear
-        }
+        }*/
 
         transform.eulerAngles += new Vector3(Input.GetAxis("Mouse Y") * -1, Input.GetAxis("Mouse X"), 0);           //changes the rotation of the camera based on mouse movement input
 
@@ -96,7 +96,7 @@ public class move : MonoBehaviour
                     interacting = objects.collider.gameObject;          //and declares that what object it is holding
                     interacted = true;              //and that it is holding an object
                 }
-                if (objects.collider.tag == "hemo" && !SceneManager.GetSceneByName("Pipes").isLoaded)           //if the player clicks on the hemodialysis machine
+ /*               if (objects.collider.tag == "hemo" && !SceneManager.GetSceneByName("Pipes").isLoaded)           //if the player clicks on the hemodialysis machine
                 {
                     Cursor.lockState = CursorLockMode.None;         //the mouse is unlocked
                     SceneManager.LoadScene("Pipes", LoadSceneMode.Additive);            //and the pipe scene is loaded
@@ -109,7 +109,7 @@ public class move : MonoBehaviour
                     SceneManager.LoadScene("Maze", LoadSceneMode.Additive);         //the maze scene is loaded
                     crosshair.SetActive(false);             //and the crosshair disappears
 
-                }
+                }*/
                 if (objects.collider.tag == "button")               //if the player clicks on keypad buttons
                 {
                     input[order] = objects.collider.name;           //the array will store the number pressed
